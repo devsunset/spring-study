@@ -4,6 +4,8 @@
 
 * [Spring Learn](https://spring.io/learn)
 * [Spring Guides](https://spring.io/guides)
+* [Spring Guides GitHub](https://github.com/spring-guides)
+
 * [Spring Projects](https://spring.io/projects)
 
 # ####################################################################
