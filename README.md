@@ -49,56 +49,43 @@
 
 # To-Do ####################################################################
 
-# Getting Started
 
-### Reference Documentation
-For further reference, please consider the following sections:
-
-* [Official Gradle documentation](https://docs.gradle.org)
-* [Spring Boot Gradle Plugin Reference Guide](https://docs.spring.io/spring-boot/docs/2.5.2/gradle-plugin/reference/html/)
-* [Create an OCI image](https://docs.spring.io/spring-boot/docs/2.5.2/gradle-plugin/reference/html/#build-image)
-* [Spring Boot DevTools](https://docs.spring.io/spring-boot/docs/2.5.2/reference/htmlsingle/#using-boot-devtools)
-* [Spring Configuration Processor](https://docs.spring.io/spring-boot/docs/2.5.2/reference/htmlsingle/#configuration-metadata-annotation-processor)
-* [Spring Web](https://docs.spring.io/spring-boot/docs/2.5.2/reference/htmlsingle/#boot-features-developing-web-applications)
-* [Spring Security](https://docs.spring.io/spring-boot/docs/2.5.2/reference/htmlsingle/#boot-features-security)
-* [Spring Data JPA](https://docs.spring.io/spring-boot/docs/2.5.2/reference/htmlsingle/#boot-features-jpa-and-spring-data)
-* [MyBatis Framework](https://mybatis.org/spring-boot-starter/mybatis-spring-boot-autoconfigure/)
-* [WebSocket](https://docs.spring.io/spring-boot/docs/2.5.2/reference/htmlsingle/#boot-features-websockets)
-* [Spring Batch](https://docs.spring.io/spring-boot/docs/2.5.2/reference/htmlsingle/#howto-batch-applications)
-* [Validation](https://docs.spring.io/spring-boot/docs/2.5.2/reference/htmlsingle/#boot-features-validation)
-* [Java Mail Sender](https://docs.spring.io/spring-boot/docs/2.5.2/reference/htmlsingle/#boot-features-email)
-* [Spring cache abstraction](https://docs.spring.io/spring-boot/docs/2.5.2/reference/htmlsingle/#boot-features-caching)
-* [Spring Boot Actuator](https://docs.spring.io/spring-boot/docs/2.5.2/reference/htmlsingle/#production-ready)
-
-### Guides (https://github.com/spring-guides)
-The following guides illustrate how to u
-
-
+### Guide (example)
 * [Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content/)
 * [Building a RESTful Web Service](https://spring.io/guides/gs/rest-service/)
 * [Building a RESTful Web Service with Spring Boot Actuator](https://spring.io/guides/gs/actuator-service/)
-
 * [MyBatis Quick Start](https://github.com/mybatis/spring-boot-starter/wiki/Quick-Start)
 * [Accessing data with MySQL](https://spring.io/guides/gs/accessing-data-mysql/)
 * [Accessing Data with JPA](https://spring.io/guides/gs/accessing-data-jpa/)
-
 * [Creating a Batch Service](https://spring.io/guides/gs/batch-processing/)
-
 * [Caching Data with Spring](https://spring.io/guides/gs/caching/)
-
 * [Securing a Web Application](https://spring.io/guides/gs/securing-web/)
 
 * [Spring Boot and OAuth2](https://spring.io/guides/tutorials/spring-boot-oauth2/)
 * [Authenticating a User with LDAP](https://spring.io/guides/gs/authenticating-ldap/)
 * [Using WebSocket to build an interactive web application](https://spring.io/guides/gs/messaging-stomp-websocket/)
 
+### Reference Documentation
+* [Official Gradle documentation](https://docs.gradle.org)
+* [Spring Boot Gradle Plugin Reference Guide](https://docs.spring.io/spring-boot/docs/2.5.2/gradle-plugin/reference/html/)
+* [Create an OCI image](https://docs.spring.io/spring-boot/docs/2.5.2/gradle-plugin/reference/html/#build-image)
+* [Spring Boot DevTools](https://docs.spring.io/spring-boot/docs/2.5.2/reference/htmlsingle/#using-boot-devtools)
+* [Spring Configuration Processor](https://docs.spring.io/spring-boot/docs/2.5.2/reference/htmlsingle/#configuration-metadata-annotation-processor)
 
-### Additional Links
-These additional references should also help you:
+* [Spring Web](https://docs.spring.io/spring-boot/docs/2.5.2/reference/htmlsingle/#boot-features-developing-web-applications)
+* [MyBatis Framework](https://mybatis.org/spring-boot-starter/mybatis-spring-boot-autoconfigure/)
+* [Spring Data JPA](https://docs.spring.io/spring-boot/docs/2.5.2/reference/htmlsingle/#boot-features-jpa-and-spring-data)
+* [Spring Security](https://docs.spring.io/spring-boot/docs/2.5.2/reference/htmlsingle/#boot-features-security)
+* [Spring Batch](https://docs.spring.io/spring-boot/docs/2.5.2/reference/htmlsingle/#howto-batch-applications)
+* [Spring cache abstraction](https://docs.spring.io/spring-boot/docs/2.5.2/reference/htmlsingle/#boot-features-caching)
 
-* [Gradle Build Scans – insights for your project's build](https://scans.gradle.com#gradle)
+* [Validation](https://docs.spring.io/spring-boot/docs/2.5.2/reference/htmlsingle/#boot-features-validation)
+* [Java Mail Sender](https://docs.spring.io/spring-boot/docs/2.5.2/reference/htmlsingle/#boot-features-email)
+* [Spring Boot Actuator](https://docs.spring.io/spring-boot/docs/2.5.2/reference/htmlsingle/#production-ready)
+* [WebSocket](https://docs.spring.io/spring-boot/docs/2.5.2/reference/htmlsingle/#boot-features-websockets)
 
 
+--------------------------------------------------------------------------
 
 
 # ALL ####################################################################
