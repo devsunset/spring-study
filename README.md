@@ -49,15 +49,12 @@
 
 # To-Do ####################################################################
 
-
 ### Guide (example)
+* [Building an Application with Spring Boot](https://spring.io/guides/gs/spring-boot/)
 * [Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content/)
 * [Building a RESTful Web Service](https://spring.io/guides/gs/rest-service/)
 * [Building a RESTful Web Service with Spring Boot Actuator](https://spring.io/guides/gs/actuator-service/)
-
-Learn how to easily build RESTful services with Spring
-* [Building REST services with Spring](https://spring.io/guides/tutorials/rest/)
-
+* [Building REST services with Spring](https://spring.io/guides/tutorials/rest/) 
 * [MyBatis Quick Start](https://github.com/mybatis/spring-boot-starter/wiki/Quick-Start)
 * [Accessing data with MySQL](https://spring.io/guides/gs/accessing-data-mysql/)
 * [Accessing Data with JPA](https://spring.io/guides/gs/accessing-data-jpa/)
@@ -88,11 +85,9 @@ Learn how to easily build RESTful services with Spring
 * [Spring Boot Actuator](https://docs.spring.io/spring-boot/docs/2.5.2/reference/htmlsingle/#production-ready)
 * [WebSocket](https://docs.spring.io/spring-boot/docs/2.5.2/reference/htmlsingle/#boot-features-websockets)
 
-
 --------------------------------------------------------------------------
 
-
-# ALL ####################################################################
+# ALL HELP.md ####################################################################
 
 # Read Me First
 The following was discovered as part of building this project:
