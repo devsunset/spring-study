@@ -71,20 +71,21 @@ For further reference, please consider the following sections:
 * [Spring Boot Actuator](https://docs.spring.io/spring-boot/docs/2.5.2/reference/htmlsingle/#production-ready)
 
 ### Guides (https://github.com/spring-guides)
-The following guides illustrate how to use some features concretely:
+The following guides illustrate how to u
 
-* [Building a RESTful Web Service](https://spring.io/guides/gs/rest-service/)
-* [Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content/)
 * [Securing a Web Application](https://spring.io/guides/gs/securing-web/)
-* [Spring Boot and OAuth2](https://spring.io/guides/tutorials/spring-boot-oauth2/)
-* [Authenticating a User with LDAP](https://spring.io/guides/gs/authenticating-ldap/)
-* [Accessing Data with JPA](https://spring.io/guides/gs/accessing-data-jpa/)
+* [Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content/)
+* [Building a RESTful Web Service](https://spring.io/guides/gs/rest-service/)
+* [Building a RESTful Web Service with Spring Boot Actuator](https://spring.io/guides/gs/actuator-service/)
 * [MyBatis Quick Start](https://github.com/mybatis/spring-boot-starter/wiki/Quick-Start)
 * [Accessing data with MySQL](https://spring.io/guides/gs/accessing-data-mysql/)
-* [Using WebSocket to build an interactive web application](https://spring.io/guides/gs/messaging-stomp-websocket/)
+* [Accessing Data with JPA](https://spring.io/guides/gs/accessing-data-jpa/)
 * [Creating a Batch Service](https://spring.io/guides/gs/batch-processing/)
 * [Caching Data with Spring](https://spring.io/guides/gs/caching/)
-* [Building a RESTful Web Service with Spring Boot Actuator](https://spring.io/guides/gs/actuator-service/)
+* [Spring Boot and OAuth2](https://spring.io/guides/tutorials/spring-boot-oauth2/)
+* [Authenticating a User with LDAP](https://spring.io/guides/gs/authenticating-ldap/)
+* [Using WebSocket to build an interactive web application](https://spring.io/guides/gs/messaging-stomp-websocket/)
+
 
 ### Additional Links
 These additional references should also help you:
