@@ -75,7 +75,6 @@ The following guides illustrate how to use some features concretely:
 
 * [Building a RESTful Web Service](https://spring.io/guides/gs/rest-service/)
 * [Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content/)
-* [Building REST services with Spring](https://spring.io/guides/tutorials/bookmarks/)
 * [Securing a Web Application](https://spring.io/guides/gs/securing-web/)
 * [Spring Boot and OAuth2](https://spring.io/guides/tutorials/spring-boot-oauth2/)
 * [Authenticating a User with LDAP](https://spring.io/guides/gs/authenticating-ldap/)
@@ -238,7 +237,6 @@ The following guides illustrate how to use some features concretely:
 * [MyBatis Quick Start](https://github.com/mybatis/spring-boot-starter/wiki/Quick-Start)
 * [Accessing data with MySQL](https://spring.io/guides/gs/accessing-data-mysql/)
 * [Messaging with Redis](https://spring.io/guides/gs/messaging-redis/)
-* [Messaging with Redis](https://spring.io/guides/gs/messaging-redis/)
 * [Accessing Data with MongoDB](https://spring.io/guides/gs/accessing-data-mongodb/)
 * [Using Spring for Apache Geode](https://github.com/spring-projects/spring-boot-data-geode/tree/master/spring-geode-samples)
 * [Accessing Data with Neo4j](https://spring.io/guides/gs/accessing-data-neo4j/)
@@ -253,7 +251,6 @@ The following guides illustrate how to use some features concretely:
 * [Building a RESTful Web Service with Spring Boot Actuator](https://spring.io/guides/gs/actuator-service/)
 * [Spring Cloud Contract Verifier Setup](https://cloud.spring.io/spring-cloud-contract/spring-cloud-contract.html#_spring_cloud_contract_verifier_setup)
 * [Centralized Configuration](https://spring.io/guides/gs/centralized-configuration/)
-* [Service Registration and Discovery with Eureka and Spring Cloud](https://spring.io/guides/gs/service-registration-and-discovery/)
 * [Service Registration and Discovery with Eureka and Spring Cloud](https://spring.io/guides/gs/service-registration-and-discovery/)
 * [Using Spring Cloud Gateway](https://github.com/spring-cloud-samples/spring-cloud-gateway-sample)
 * [Client-side load-balancing with Spring Cloud LoadBalancer](https://spring.io/guides/gs/spring-cloud-loadbalancer/)
