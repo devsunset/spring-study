@@ -73,15 +73,21 @@ For further reference, please consider the following sections:
 ### Guides (https://github.com/spring-guides)
 The following guides illustrate how to u
 
-* [Securing a Web Application](https://spring.io/guides/gs/securing-web/)
+
 * [Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content/)
 * [Building a RESTful Web Service](https://spring.io/guides/gs/rest-service/)
 * [Building a RESTful Web Service with Spring Boot Actuator](https://spring.io/guides/gs/actuator-service/)
+
 * [MyBatis Quick Start](https://github.com/mybatis/spring-boot-starter/wiki/Quick-Start)
 * [Accessing data with MySQL](https://spring.io/guides/gs/accessing-data-mysql/)
 * [Accessing Data with JPA](https://spring.io/guides/gs/accessing-data-jpa/)
+
 * [Creating a Batch Service](https://spring.io/guides/gs/batch-processing/)
+
 * [Caching Data with Spring](https://spring.io/guides/gs/caching/)
+
+* [Securing a Web Application](https://spring.io/guides/gs/securing-web/)
+
 * [Spring Boot and OAuth2](https://spring.io/guides/tutorials/spring-boot-oauth2/)
 * [Authenticating a User with LDAP](https://spring.io/guides/gs/authenticating-ldap/)
 * [Using WebSocket to build an interactive web application](https://spring.io/guides/gs/messaging-stomp-websocket/)
