@@ -16,6 +16,6 @@ public class HelloRestfulController {
 
 	@GetMapping("/helloRestful")
 	public Hello hello(@RequestParam(value = "name", defaultValue = "World") String name) {
-		return new Hello(counter.incrementAndGet(), String.format(template, name+" - RestController RESTful (Jackson return)"));
+		return new Hello(counter.incrementAndGet(), String.format(template, name+" - RestController RESTful (use Jackson &  return json)"));
 	}
 }
