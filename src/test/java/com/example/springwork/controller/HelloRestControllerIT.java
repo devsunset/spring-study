@@ -31,7 +31,7 @@ public class HelloRestControllerIT {
 
     @Test
     public void getHello() throws Exception {
-        ResponseEntity<String> response = template.getForEntity(base.toString()+ "/hellorest",
+        ResponseEntity<String> response = template.getForEntity(base.toString()+ "/helloRest",
                 String.class);
         assertThat(response.getBody()).isEqualTo("Hello World - RestController");
     }
