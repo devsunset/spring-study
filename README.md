@@ -55,14 +55,16 @@
 * [Building a RESTful Web Service](https://spring.io/guides/gs/rest-service/)
 * [Building a RESTful Web Service with Spring Boot Actuator](https://spring.io/guides/gs/actuator-service/)
 * [Spring HATEOAS](https://docs.spring.io/spring-boot/docs/2.5.1/reference/htmlsingle/#boot-features-spring-hateoas)
-* [Building REST services with Spring](https://spring.io/guides/tutorials/rest/) 
 
 * [MyBatis Quick Start](https://github.com/mybatis/spring-boot-starter/wiki/Quick-Start)
 * [Accessing data with MySQL](https://spring.io/guides/gs/accessing-data-mysql/)
 * [Accessing Data with JPA](https://spring.io/guides/gs/accessing-data-jpa/)
 
+* [Building REST services with Spring](https://spring.io/guides/tutorials/rest/) 
+
 * [Creating a Batch Service](https://spring.io/guides/gs/batch-processing/)
 * [Caching Data with Spring](https://spring.io/guides/gs/caching/)
+
 * [Securing a Web Application](https://spring.io/guides/gs/securing-web/)
 
 * [Spring Boot and OAuth2](https://spring.io/guides/tutorials/spring-boot-oauth2/)
@@ -75,18 +77,18 @@
 * [Create an OCI image](https://docs.spring.io/spring-boot/docs/2.5.2/gradle-plugin/reference/html/#build-image)
 * [Spring Boot DevTools](https://docs.spring.io/spring-boot/docs/2.5.2/reference/htmlsingle/#using-boot-devtools)
 * [Spring Configuration Processor](https://docs.spring.io/spring-boot/docs/2.5.2/reference/htmlsingle/#configuration-metadata-annotation-processor)
+* [Spring Boot Actuator](https://docs.spring.io/spring-boot/docs/2.5.2/reference/htmlsingle/#production-ready)
 
 * [Spring Web](https://docs.spring.io/spring-boot/docs/2.5.2/reference/htmlsingle/#boot-features-developing-web-applications)
 * [Spring HATEOAS](https://docs.spring.io/spring-boot/docs/2.5.1/reference/htmlsingle/#boot-features-spring-hateoas)
 * [MyBatis Framework](https://mybatis.org/spring-boot-starter/mybatis-spring-boot-autoconfigure/)
 * [Spring Data JPA](https://docs.spring.io/spring-boot/docs/2.5.2/reference/htmlsingle/#boot-features-jpa-and-spring-data)
-* [Spring Security](https://docs.spring.io/spring-boot/docs/2.5.2/reference/htmlsingle/#boot-features-security)
 * [Spring Batch](https://docs.spring.io/spring-boot/docs/2.5.2/reference/htmlsingle/#howto-batch-applications)
 * [Spring cache abstraction](https://docs.spring.io/spring-boot/docs/2.5.2/reference/htmlsingle/#boot-features-caching)
+* [Spring Security](https://docs.spring.io/spring-boot/docs/2.5.2/reference/htmlsingle/#boot-features-security)
 
-* [Validation](https://docs.spring.io/spring-boot/docs/2.5.2/reference/htmlsingle/#boot-features-validation)
 * [Java Mail Sender](https://docs.spring.io/spring-boot/docs/2.5.2/reference/htmlsingle/#boot-features-email)
-* [Spring Boot Actuator](https://docs.spring.io/spring-boot/docs/2.5.2/reference/htmlsingle/#production-ready)
+* [Validation](https://docs.spring.io/spring-boot/docs/2.5.2/reference/htmlsingle/#boot-features-validation)
 * [WebSocket](https://docs.spring.io/spring-boot/docs/2.5.2/reference/htmlsingle/#boot-features-websockets)
 
 --------------------------------------------------------------------------
