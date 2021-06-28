@@ -14,7 +14,7 @@ import org.springframework.boot.web.server.LocalServerPort;
 import org.springframework.http.ResponseEntity;
 
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-public class HelloControllerIT {
+public class HelloRestControllerIT {
 
 	@LocalServerPort
 	private int port;
@@ -31,7 +31,7 @@ public class HelloControllerIT {
 
     @Test
     public void getHello() throws Exception {
-        ResponseEntity<String> response = template.getForEntity(base.toString()+ "/hello",
+        ResponseEntity<String> response = template.getForEntity(base.toString()+ "/hellorest",
                 String.class);
         assertThat(response.getBody()).isEqualTo("Hello World - RestController");
     }
