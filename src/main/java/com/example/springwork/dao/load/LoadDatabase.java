@@ -1,4 +1,4 @@
-package com.example.springwork.dao.config;
+package com.example.springwork.dao.load;
 
 import com.example.springwork.domain.Employee;
 import com.example.springwork.dao.repository.EmployeeRepository;
