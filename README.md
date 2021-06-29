@@ -61,6 +61,7 @@
 * [Accessing Relational Data using JDBC with Spring](https://spring.io/guides/gs/relational-data-access/) 
 * [Managing Transactions](https://spring.io/guides/gs/managing-transactions/) 
 * [MyBatis Quick Start](https://github.com/mybatis/spring-boot-starter/wiki/Quick-Start)        
+https://atoz-develop.tistory.com/entry/Spring-Boot-MyBatis-%EC%84%A4%EC%A0%95-%EB%B0%A9%EB%B2%95
 * [Accessing Data with JPA](https://spring.io/guides/gs/accessing-data-jpa/)
 * [Accessing data with MySQL](https://spring.io/guides/gs/accessing-data-mysql/)
 * [Creating a Batch Service](https://spring.io/guides/gs/batch-processing/)
