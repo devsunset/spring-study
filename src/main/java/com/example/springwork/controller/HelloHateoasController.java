@@ -2,7 +2,7 @@ package com.example.springwork.controller;
 
 import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.*;
 
-import com.example.springwork.domain.Greeting;
+import com.example.springwork.domain.HelloSub;
 
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpStatus;
@@ -17,10 +17,10 @@ public class HelloHateoasController {
 	private static final String TEMPLATE = "Hello, %s!";
 
 	@RequestMapping("/helloHateoas")
-	public HttpEntity<Greeting> greeting(
+	public HttpEntity<HelloSub> greeting(
 		@RequestParam(value = "name", defaultValue = "World") String name) {
 
-		Greeting greeting = new Greeting(String.format(TEMPLATE, name +" - RestController Hateoas"));
+		HelloSub greeting = new HelloSub(String.format(TEMPLATE, name +" - RestController Hateoas"));
 		greeting.add(linkTo(methodOn(HelloHateoasController.class).greeting(name)).withSelfRel());
 
 		return new ResponseEntity<>(greeting, HttpStatus.OK);
