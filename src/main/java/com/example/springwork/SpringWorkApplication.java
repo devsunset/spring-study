@@ -42,14 +42,14 @@ public class SpringWorkApplication implements CommandLineRunner {
 	@Bean
 	public CommandLineRunner commandLineRunner(ApplicationContext ctx) {
 		return args -> {
-			System.out.println("##################################################");
-			System.out.println("Let's inspect the beans provided by Spring Boot:");
+			log.info("##################################################");
+			log.info("Let's inspect the beans provided by Spring Boot:");
 			String[] beanNames = ctx.getBeanDefinitionNames();
 			Arrays.sort(beanNames);
 			for (String beanName : beanNames) {
-				System.out.println(beanName);
+				log.info(beanName);
 			}
-			System.out.println("##################################################");
+			log.info("##################################################");
 		};
 	}
 
@@ -74,15 +74,15 @@ public class SpringWorkApplication implements CommandLineRunner {
 	  return args -> {
 
 		Connection connection = dataSource.getConnection();
-        System.out.println("Url: " + connection.getMetaData().getURL());
-        System.out.println("UserName: " + connection.getMetaData().getUserName());
+        log.info("Url: " + connection.getMetaData().getURL());
+        log.info("UserName: " + connection.getMetaData().getUserName());
 		
 		City city = new City();
 		city.setName("San Francisco");
 		city.setState("CA");
 		city.setCountry("US");
 		cityMapper.insert(city);
-		System.out.println(this.cityMapper.findById(city.getId()));
+		log.info(this.cityMapper.findById(city.getId()).toString());
 	  };
 	}
 
