@@ -2,6 +2,9 @@ package com.example.springwork;
 
 import java.util.Arrays;
 
+import com.example.springwork.dao.mapper.CityMapper;
+import com.example.springwork.domain.City;
+
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -40,4 +43,23 @@ public class SpringWorkApplication {
 			}
 		};
 	}
+
+	private final CityMapper cityMapper;
+
+	public SpringWorkApplication(CityMapper cityMapper) {
+	  this.cityMapper = cityMapper;
+	}
+  
+	@Bean
+	CommandLineRunner sampleCommandLineRunner() {
+	  return args -> {
+		City city = new City();
+		city.setName("San Francisco");
+		city.setState("CA");
+		city.setCountry("US");
+		cityMapper.insert(city);
+		System.out.println(this.cityMapper.findById(city.getId()));
+	  };
+	}
+  
 }
