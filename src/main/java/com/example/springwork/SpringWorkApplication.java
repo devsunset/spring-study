@@ -9,7 +9,7 @@ import javax.sql.DataSource;
 
 import com.example.springwork.dao.mapper.CityMapper;
 import com.example.springwork.domain.City;
-import com.example.springwork.domain.Customer;
+// import com.example.springwork.domain.Customer;
 import com.example.springwork.service.BookingService;
 
 import org.slf4j.Logger;
@@ -24,6 +24,9 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
+import org.mybatis.spring.annotation.MapperScan;
+
+@MapperScan(basePackageClasses = SpringWorkApplication.class)
 @SpringBootApplication
 public class SpringWorkApplication {
 
@@ -84,10 +87,10 @@ public class SpringWorkApplication {
 		jdbcTemplate.batchUpdate("INSERT INTO customers(first_name, last_name) VALUES (?,?)", splitUpNames);
 
 		log.info("Querying for customer records where first_name = 'Josh':");
-		jdbcTemplate.query(
-			"SELECT id, first_name, last_name FROM customers WHERE first_name = ?", new Object[] { "Josh" },
-			(rs, rowNum) -> new Customer(rs.getLong("id"), rs.getString("first_name"), rs.getString("last_name"))
-		).forEach(customer -> log.info(customer.toString()));
+		// jdbcTemplate.query(
+		// 	"SELECT id, first_name, last_name FROM customers WHERE first_name = ?", new Object[] { "Josh" },
+		// 	(rs, rowNum) -> new Customer(rs.getLong("id"), rs.getString("first_name"), rs.getString("last_name"))
+		// ).forEach(customer -> log.info(customer.toString()));
 	  };
 	}
 
