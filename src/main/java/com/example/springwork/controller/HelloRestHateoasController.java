@@ -12,16 +12,16 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @RestController
-public class HelloHateoasController {
+public class HelloRestHateoasController {
 
-	private static final String TEMPLATE = "Hello, %s!";
+	private static final String TEMPLATE = "Hello, %s";
 
-	@RequestMapping("/helloHateoas")
-	public HttpEntity<HelloSub> greeting(
+	@RequestMapping("/helloRestHateoas")
+	public HttpEntity<HelloSub> index(
 		@RequestParam(value = "name", defaultValue = "World") String name) {
 
 		HelloSub greeting = new HelloSub(String.format(TEMPLATE, name +" - RestController Hateoas"));
-		greeting.add(linkTo(methodOn(HelloHateoasController.class).greeting(name)).withSelfRel());
+		greeting.add(linkTo(methodOn(HelloRestHateoasController.class).index(name)).withSelfRel());
 
 		return new ResponseEntity<>(greeting, HttpStatus.OK);
 	}
