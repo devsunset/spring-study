@@ -1,3 +1,8 @@
+
+DROP TABLE IF EXISTS BOOKINGS;
+
+CREATE TABLE  BOOKINGS(ID serial, FIRST_NAME varchar(5) NOT NULL);
+
 DROP TABLE IF EXISTS city;
 CREATE TABLE city
 (
@@ -15,6 +20,3 @@ CREATE TABLE Products
     prod_name   VARCHAR(255)    NOT NULL,
     prod_price  INT             NOT NULL
 );
-
-drop table BOOKINGS if exists;
-create table BOOKINGS(ID serial, FIRST_NAME varchar(5) NOT NULL);
