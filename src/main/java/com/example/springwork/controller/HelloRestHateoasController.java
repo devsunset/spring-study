@@ -17,11 +17,11 @@ public class HelloRestHateoasController {
 	private static final String TEMPLATE = "Hello, %s";
 
 	@RequestMapping("/helloRestHateoas")
-	public HttpEntity<HelloSub> index(
+	public HttpEntity<HelloSub> hello(
 		@RequestParam(value = "name", defaultValue = "World") String name) {
 
 		HelloSub greeting = new HelloSub(String.format(TEMPLATE, name +" - RestController Hateoas"));
-		greeting.add(linkTo(methodOn(HelloRestHateoasController.class).index(name)).withSelfRel());
+		greeting.add(linkTo(methodOn(HelloRestHateoasController.class).hello(name)).withSelfRel());
 
 		return new ResponseEntity<>(greeting, HttpStatus.OK);
 	}
