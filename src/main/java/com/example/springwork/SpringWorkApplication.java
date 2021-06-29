@@ -1,10 +1,14 @@
 package com.example.springwork;
 
+import java.sql.Connection;
 import java.util.Arrays;
+
+import javax.sql.DataSource;
 
 import com.example.springwork.dao.mapper.CityMapper;
 import com.example.springwork.domain.City;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -15,6 +19,10 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @SpringBootApplication
 public class SpringWorkApplication {
+
+	@Autowired
+    DataSource dataSource;
+
 
 	public static void main(String[] args) {
 		SpringApplication.run(SpringWorkApplication.class, args);
@@ -53,6 +61,11 @@ public class SpringWorkApplication {
 	@Bean
 	CommandLineRunner sampleCommandLineRunner() {
 	  return args -> {
+
+		Connection connection = dataSource.getConnection();
+        System.out.println("Url: " + connection.getMetaData().getURL());
+        System.out.println("UserName: " + connection.getMetaData().getUserName());
+		
 		City city = new City();
 		city.setName("San Francisco");
 		city.setState("CA");
