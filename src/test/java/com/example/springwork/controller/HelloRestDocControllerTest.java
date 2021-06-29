@@ -26,6 +26,6 @@ public class HelloRestDocControllerTest {
 	public void shouldReturnDefaultMessage() throws Exception {
 		this.mockMvc.perform(get("/helloRestDoc")).andDo(print()).andExpect(status().isOk())
 				.andExpect(content().string(containsString("Hello, World")))
-                .andDo(document("home", responseFields(fieldWithPath("message").description("The welcome message for the user."))));
+                .andDo(document("HelloRestDocController", responseFields(fieldWithPath("message").description("The welcome message for the user."))));
 	}
 }
