@@ -272,35 +272,35 @@ Learn how to import and work with a Spring Getting Started Guide in VS Code.
 
 ### Topical Guides
 * [Spring Security Architecture](https://spring.io/guides/topicals/spring-security-architecture/)
-- Topical guide to Spring Security, how the bits fit together and how they interact with Spring Boot
+Topical guide to Spring Security, how the bits fit together and how they interact with Spring Boot
 
 * [Spring Boot Docker](https://spring.io/guides/topicals/spring-boot-docker/)
-- Topical guide to using Docker and how to create container images for Spring Boot applications
+Topical guide to using Docker and how to create container images for Spring Boot applications
 
 * [Spring on Kubernetes](https://spring.io/guides/topicals/spring-on-kubernetes/)
-- Topic guide to Spring and Kubernetes
+Topic guide to Spring and Kubernetes
 
 ### Tutorials
 * [Building REST services with Spring](https://spring.io/guides/tutorials/rest/) 
-- Learn how to easily build RESTful services with Spring
+Learn how to easily build RESTful services with Spring
 
 * [Spring Security and Angular]
-- A tutorial on how to use Spring Security with a single page application with various backend architectures, ranging from a simple single server to an API gateway with OAuth2 authentication.
+A tutorial on how to use Spring Security with a single page application with various backend architectures, ranging from a simple single server to an API gateway with OAuth2 authentication.
 
 *  React.js and Spring Data REST
-- A tutorial based on the 5-part blog series by Greg Turnquist
+A tutorial based on the 5-part blog series by Greg Turnquist
 
 *  Spring Boot and OAuth2
-- A tutorial on "social" login and single sign on with Facebook and Github
+A tutorial on "social" login and single sign on with Facebook and Github
 
 *  Building web applications with Spring Boot and Kotlin
-- Learn how to easily build and test web applications with Spring, Kotlin, Junit 5 and JPA
+Learn how to easily build and test web applications with Spring, Kotlin, Junit 5 and JPA
 
 *  Spring Boot with Kotlin Coroutines and RSocket
-- Build a chat application with Reactive Web services from Spring, Kotlin, WebFlux and RSocket
+Build a chat application with Reactive Web services from Spring, Kotlin, WebFlux and RSocket
 
 * [Metrics and Tracing with Spring](https://spring.io/guides/tutorials/metrics-and-tracing/) 
-- Learn how to create metrics and tracing with Spring Boot
+Learn how to create metrics and tracing with Spring Boot
 
 
 # ALL HELP.md ####################################################################
