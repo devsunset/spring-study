@@ -12,6 +12,7 @@ import com.example.springwork.dao.repository.CustomerRepository;
 import com.example.springwork.domain.City;
 import com.example.springwork.domain.Customer;
 import com.example.springwork.service.BookingService;
+import com.example.springwork.support.cache.BookRepository;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.slf4j.Logger;
@@ -20,14 +21,17 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
-@MapperScan(basePackageClasses = SpringWorkApplication.class)
+// @MapperScan(basePackageClasses = SpringWorkApplication.class)
+@MapperScan(value = {"com.example.springwork.dao.*"})
 @SpringBootApplication
+@EnableCaching
 public class SpringWorkApplication {
 
 	private static final Logger log = LoggerFactory.getLogger(SpringWorkApplication.class);
@@ -42,6 +46,9 @@ public class SpringWorkApplication {
 
 	@Autowired
 	BookingService bookingService;
+
+	@Autowired
+	BookRepository bookRepository;
 
 	public SpringWorkApplication(CityMapper cityMapper) {
 	  this.cityMapper = cityMapper;
@@ -188,6 +195,19 @@ public class SpringWorkApplication {
 		//  log.info(bauer.toString());
 		// }
 		log.info("");
+	  };
+	}
+
+	@Bean
+	CommandLineRunner sampleCacheCommandLineRunner() {
+	  return args -> {
+		log.info(".... Fetching books");
+		log.info("isbn-1234 -->" + bookRepository.getByIsbn("isbn-1234"));
+		log.info("isbn-4567 -->" + bookRepository.getByIsbn("isbn-4567"));
+		log.info("isbn-1234 -->" + bookRepository.getByIsbn("isbn-1234"));
+		log.info("isbn-4567 -->" + bookRepository.getByIsbn("isbn-4567"));
+		log.info("isbn-1234 -->" + bookRepository.getByIsbn("isbn-1234"));
+		log.info("isbn-1234 -->" + bookRepository.getByIsbn("isbn-1234"));
 	  };
 	}
 
