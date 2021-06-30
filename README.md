@@ -68,6 +68,7 @@
 * [Securing a Web Application](https://spring.io/guides/gs/securing-web/)
 * [Spring Boot and OAuth2](https://spring.io/guides/tutorials/spring-boot-oauth2/)
 * [Using WebSocket to build an interactive web application](https://spring.io/guides/gs/messaging-stomp-websocket/)
+* [Building a Reactive RESTful Web Service](https://spring.io/guides/gs/reactive-rest-service/)
 
 --------------------------------------------------------------------------
 
