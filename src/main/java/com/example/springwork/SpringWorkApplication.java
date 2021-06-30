@@ -13,6 +13,7 @@ import com.example.springwork.domain.City;
 import com.example.springwork.domain.Customer;
 import com.example.springwork.service.BookingService;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,8 +25,6 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
-
-import org.mybatis.spring.annotation.MapperScan;
 
 @MapperScan(basePackageClasses = SpringWorkApplication.class)
 @SpringBootApplication
@@ -43,7 +42,6 @@ public class SpringWorkApplication {
 
 	@Autowired
 	BookingService bookingService;
-
 
 	public SpringWorkApplication(CityMapper cityMapper) {
 	  this.cityMapper = cityMapper;
@@ -72,9 +70,18 @@ public class SpringWorkApplication {
 	  return args -> {
 		log.info("Creating tables");
 
-		jdbcTemplate.execute("DROP TABLE customers IF EXISTS");
-		jdbcTemplate.execute("CREATE TABLE customers(" +
+		Connection connection = dataSource.getConnection();
+        log.info("Url: " + connection.getMetaData().getURL());
+
+		if (connection.getMetaData().getURL().toString().indexOf("jdbc:mariadb") > -1){
+			jdbcTemplate.execute("DROP TABLE IF EXISTS customers");
+			jdbcTemplate.execute("CREATE TABLE customers(" +
+			"id  INT PRIMARY KEY AUTO_INCREMENT, first_name VARCHAR(255), last_name VARCHAR(255))");
+		}else{
+			jdbcTemplate.execute("DROP TABLE IF EXISTS customers");
+			jdbcTemplate.execute("CREATE TABLE customers(" +
 			"id SERIAL, first_name VARCHAR(255), last_name VARCHAR(255))");
+		}
 
 		// Split up the array of whole names into an array of first/last names
 		List<Object[]> splitUpNames = Arrays.asList("John Woo", "Jeff Dean", "Josh Bloch", "Josh Long").stream()
