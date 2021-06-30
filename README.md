@@ -290,10 +290,10 @@ Learn how to import and work with a Spring Getting Started Guide in VS Code.
 
 ### Tutorials
 * [Building REST services with Spring](https://spring.io/guides/tutorials/rest/) 
-- Learn how to easily build RESTful services with Spring
+# Learn how to easily build RESTful services with Spring
 
 * [Spring Security and Angular]
-- A tutorial on how to use Spring Security with a single page application with various backend architectures, ranging from a simple single server to an API gateway with OAuth2 authentication.
+# A tutorial on how to use Spring Security with a single page application with various backend architectures, ranging from a simple single server to an API gateway with OAuth2 authentication.
 
 *  React.js and Spring Data REST
 - A tutorial based on the 5-part blog series by Greg Turnquist
