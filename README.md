@@ -50,26 +50,11 @@
 # To-Do ####################################################################
 
 ### Guide 
-
-
-* [Managing Transactions](https://spring.io/guides/gs/managing-transactions/) 
-* [MyBatis Quick Start](https://github.com/mybatis/spring-boot-starter/wiki/Quick-Start)        
-* [Accessing Data with JPA](https://spring.io/guides/gs/accessing-data-jpa/)
-* [Accessing data with MySQL](https://spring.io/guides/gs/accessing-data-mysql/)
-* [Creating a Batch Service](https://spring.io/guides/gs/batch-processing/)
-* [Caching Data with Spring](https://spring.io/guides/gs/caching/)
-* [Securing a Web Application](https://spring.io/guides/gs/securing-web/)
-* [Spring Boot and OAuth2](https://spring.io/guides/tutorials/spring-boot-oauth2/)
-* [Using WebSocket to build an interactive web application](https://spring.io/guides/gs/messaging-stomp-websocket/)
-* [Building a Reactive RESTful Web Service](https://spring.io/guides/gs/reactive-rest-service/)
-* [Java Mail Sender](https://docs.spring.io/spring-boot/docs/2.5.1/reference/htmlsingle/#boot-features-email) 
-
-
 * [Building a RESTful Web Service](https://spring.io/guides/gs/rest-service/)
-** Learn how to create a RESTful web service with Spring.
+Learn how to create a RESTful web service with Spring.
 
 * Scheduling Tasks
-- Learn how to schedule tasks with Spring.
+Learn how to schedule tasks with Spring.
 
 * [Consuming a RESTful Web Service](https://spring.io/guides/gs/consuming-rest/)
 Learn how to retrieve web page data with Spring's RestTemplate.
@@ -107,10 +92,10 @@ Learn how to create a RESTful Web service with Spring Boot Actuator.
 * Messaging with JMS
 Learn how to publish and subscribe to messages using a JMS broker.
 
-* Creating a Batch Service
+* [Creating a Batch Service](https://spring.io/guides/gs/batch-processing/)
 Learn how to create a basic batch-driven solution.
 
-* Securing a Web Application
+* [Securing a Web Application](https://spring.io/guides/gs/securing-web/)
 Learn how to protect your web application with Spring Security.
 
 * [Building a Hypermedia-Driven RESTful Web Service](https://spring.io/guides/gs/rest-hateoas/)
@@ -125,10 +110,10 @@ Learn how to build an application that uses Spring Integration to fetch data, pr
 * Caching Data with Pivotal GemFire
 Learn how to cache data in GemFire.
 
-* Managing Transactions
+* [Managing Transactions](https://spring.io/guides/gs/managing-transactions/) 
 Learn how to wrap key parts of code with transactions.
 
-* Accessing Data with JPA
+* [Accessing Data with JPA](https://spring.io/guides/gs/accessing-data-jpa/)
 Learn how to work with JPA data persistence using Spring Data JPA.
 
 * Accessing Data with MongoDB
@@ -149,7 +134,7 @@ Learn how to create and submit a web form with Spring.
 * [Building an Application with Spring Boot](https://spring.io/guides/gs/spring-boot/)
 Learn how to build an application with minimal configuration.
 
-* Using WebSocket to build an interactive web application
+* [Using WebSocket to build an interactive web application](https://spring.io/guides/gs/messaging-stomp-websocket/)
 Learn how to the send and receive messages between a browser and the server over a WebSocket
 
 * Working a Getting Started guide with STS
@@ -182,7 +167,7 @@ Learn how to work with RESTful, hypermedia-based data persistence using Spring D
 * Producing a SOAP web service
 Learn how to create a SOAP-based web service with Spring.
 
-* Caching Data with Spring
+* [Caching Data with Spring](https://spring.io/guides/gs/caching/)
 Learn how to cache data in memory with Spring
 
 * Deploying to Cloud Foundry from STS
@@ -209,7 +194,7 @@ Learn how to route and filter requests to a microservice using Netflix Zuul
 * Testing the Web Layer
 Learn how to test Spring Boot applications and MVC controllers.
 
-* Accessing data with MySQL
+* [Accessing data with MySQL](https://spring.io/guides/gs/accessing-data-mysql/)
 Learn how to set up and manage user accounts on MySQL and how to configure Spring Boot to connect to it at runtime.
 
 * Creating a Multi Module Project
@@ -221,7 +206,7 @@ Learn how to generate documentation for HTTP endpoints using Spring Restdocs
 * Messaging with Google Cloud Pub/Sub
 Learn how to exchange messages using Spring Integration channel adapters and Google Cloud Pub/Sub
 
-* Building a Reactive RESTful Web Service
+* [Building a Reactive RESTful Web Service](https://spring.io/guides/gs/reactive-rest-service/)
 Learn how to create a RESTful web service with Reactive Spring.
 
 * Consumer Driven Contracts
@@ -269,6 +254,8 @@ Learn how to send application metrics to Tanzu Observability
 * Building a Guide with VS Code
 Learn how to import and work with a Spring Getting Started Guide in VS Code.
 
+* [MyBatis Quick Start](https://github.com/mybatis/spring-boot-starter/wiki/Quick-Start)  
+
 
 ### Topical Guides
 * [Spring Security Architecture](https://spring.io/guides/topicals/spring-security-architecture/)
@@ -284,23 +271,35 @@ Topic guide to Spring and Kubernetes
 * [Building REST services with Spring](https://spring.io/guides/tutorials/rest/) 
 Learn how to easily build RESTful services with Spring
 
-* [Spring Security and Angular]
+* Spring Security and Angular
 A tutorial on how to use Spring Security with a single page application with various backend architectures, ranging from a simple single server to an API gateway with OAuth2 authentication.
 
-*  React.js and Spring Data REST
+* React.js and Spring Data REST
 A tutorial based on the 5-part blog series by Greg Turnquist
 
-*  Spring Boot and OAuth2
+* [Spring Boot and OAuth2](https://spring.io/guides/tutorials/spring-boot-oauth2/)
 A tutorial on "social" login and single sign on with Facebook and Github
 
-*  Building web applications with Spring Boot and Kotlin
+* Building web applications with Spring Boot and Kotlin
 Learn how to easily build and test web applications with Spring, Kotlin, Junit 5 and JPA
 
-*  Spring Boot with Kotlin Coroutines and RSocket
+* Spring Boot with Kotlin Coroutines and RSocket
 Build a chat application with Reactive Web services from Spring, Kotlin, WebFlux and RSocket
 
 * [Metrics and Tracing with Spring](https://spring.io/guides/tutorials/metrics-and-tracing/) 
 Learn how to create metrics and tracing with Spring Boot
+
+
+```
+ ALL
+```
+
+
+
+
+
+
+
 
 
 # ALL HELP.md ####################################################################
