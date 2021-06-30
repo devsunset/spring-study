@@ -285,8 +285,7 @@ Build a chat application with Reactive Web services from Spring, Kotlin, WebFlux
 * [Metrics and Tracing with Spring](https://spring.io/guides/tutorials/metrics-and-tracing/) 
 Learn how to create metrics and tracing with Spring Boot
 
-### Additional Links Guides
-* [Spring Guides GitHub](https://github.com/spring-guides)
+### Additional Links Guides - [Spring Guides GitHub](https://github.com/spring-guides)
 * [Okta-Hosted Login Page Example](https://github.com/okta/samples-java-spring/tree/master/okta-hosted-login)
 * [Custom Login Page Example](https://github.com/okta/samples-java-spring/tree/master/custom-login)
 * [Okta Spring Security Resource Server Example](https://github.com/okta/samples-java-spring/tree/master/resource-server)
