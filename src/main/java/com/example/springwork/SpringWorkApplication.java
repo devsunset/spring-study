@@ -60,6 +60,7 @@ public class SpringWorkApplication {
 			Arrays.sort(beanNames);
 			for (String beanName : beanNames) {
 				log.info(beanName);
+				break;
 			}
 			log.info("##################################################");
 		};
