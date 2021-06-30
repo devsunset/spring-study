@@ -52,10 +52,10 @@
 ### Guide 
 
 * Building a RESTful Web Service
-Learn how to create a RESTful web service with Spring.
+- Learn how to create a RESTful web service with Spring.
 
 * Scheduling Tasks
-Learn how to schedule tasks with Spring.
+- Learn how to schedule tasks with Spring.
 
 * Consuming a RESTful Web Service
 Learn how to retrieve web page data with Spring's RestTemplate.
