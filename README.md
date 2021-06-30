@@ -6,8 +6,6 @@
 
 * [Spring Learn](https://spring.io/learn)
 * [Spring Guides](https://spring.io/guides)
-* [Spring Guides GitHub](https://github.com/spring-guides)
-
 * [Spring Projects](https://spring.io/projects) 
 
 # ####################################################################
@@ -47,9 +45,9 @@
         Events
         Team
 
-# To-Do ####################################################################
+# TO-DO ####################################################################
 
-### Guide 
+### Getting Started Guides 
 * [Building a RESTful Web Service](https://spring.io/guides/gs/rest-service/)
 Learn how to create a RESTful web service with Spring.
 
@@ -275,7 +273,7 @@ A tutorial on how to use Spring Security with a single page application with var
 * React.js and Spring Data REST
 A tutorial based on the 5-part blog series by Greg Turnquist
 
-* [Spring Boot and OAuth2](https://spring.io/guides/tutorials/spring-boot-oauth2/)
+* Spring Boot and OAuth2
 A tutorial on "social" login and single sign on with Facebook and Github
 
 * Building web applications with Spring Boot and Kotlin
@@ -287,28 +285,28 @@ Build a chat application with Reactive Web services from Spring, Kotlin, WebFlux
 * [Metrics and Tracing with Spring](https://spring.io/guides/tutorials/metrics-and-tracing/) 
 Learn how to create metrics and tracing with Spring Boot
 
+### Additional Links Guides
+* [Spring Guides GitHub](https://github.com/spring-guides)
+* [Okta-Hosted Login Page Example](https://github.com/okta/samples-java-spring/tree/master/okta-hosted-login)
+* [Custom Login Page Example](https://github.com/okta/samples-java-spring/tree/master/custom-login)
+* [Okta Spring Security Resource Server Example](https://github.com/okta/samples-java-spring/tree/master/resource-server)
+* [Using Spring Data JDBC](https://github.com/spring-projects/spring-data-examples/tree/master/jdbc/basics)
+* [Acessing data with R2DBC](https://spring.io/guides/gs/accessing-data-r2dbc/)
+* [MyBatis Quick Start](https://github.com/mybatis/spring-boot-starter/wiki/Quick-Start)
+* [Samples for using Apache Kafka Streams with Spring Cloud stream](https://github.com/spring-cloud/spring-cloud-stream-samples/tree/master/kafka-streams-samples)
+* [Java Message Service API via Apache ActiveMQ Classic.](https://spring.io/guides/gs/messaging-jms/)
+* [Spring Cloud Contract Verifier Setup](https://cloud.spring.io/spring-cloud-contract/spring-cloud-contract.html#_spring_cloud_contract_verifier_setup)
+* [Service Registration and Discovery with Eureka and Spring Cloud](https://spring.io/guides/gs/service-registration-and-discovery/)
+* [Using Spring Cloud Gateway](https://github.com/spring-cloud-samples/spring-cloud-gateway-sample)
 
 ```
  
  
 ```
 
-
-
-
-# ALL HELP.md ####################################################################
-
-# Read Me First
-The following was discovered as part of building this project:
-
-* Spring Cloud Gateway requires Spring WebFlux, your choice of Spring Web has been replaced accordingly.
-* The following dependencies are not known to work with Spring Native: 'Spring Boot DevTools, Spring Configuration Processor, Rest Repositories, Rest Repositories HAL Explorer, Spring HATEOAS, Spring Web Services, Jersey, Vaadin, Apache Freemarker, Groovy Templates, Spring LDAP, Okta, MyBatis Framework, Liquibase Migration, Flyway Migration, JOOQ Access Layer, IBM DB2 Driver, Apache Derby Database, MariaDB Driver, MS SQL Server Driver, Oracle Driver, Spring Data for Apache Cassandra, Spring Data Reactive for Apache Cassandra, Spring for Apache Geode, Spring Data Couchbase, Spring Data Reactive Couchbase, Spring Integration, Spring for RabbitMQ, Spring for Apache ActiveMQ 5, Spring for Apache ActiveMQ Artemis, Spring Batch, Quartz Scheduler, Spring cache abstraction, Datadog, Influx, Graphite, New Relic, Prometheus, Zipkin Client, Testcontainers, Contract Verifier, Contract Stub Runner, Embedded LDAP Server, Embedded MongoDB Database, Cloud Bootstrap, Task, Vault Configuration, Apache Zookeeper Configuration, Consul Configuration, Eureka Discovery Client, Eureka Server, Apache Zookeeper Discovery, Cloud Foundry Discovery, Consul Discovery, Gateway, OpenFeign, Cloud LoadBalancer, Cloud Bus, Cloud Stream'. As a result, your application may not work as expected.
-
-# Getting Started
+# HELP.md ####################################################################
 
 ### Reference Documentation
-For further reference, please consider the following sections:
-
 * [Official Gradle documentation](https://docs.gradle.org)
 * [Spring Boot Gradle Plugin Reference Guide](https://docs.spring.io/spring-boot/docs/2.5.1/gradle-plugin/reference/html/)
 * [Create an OCI image](https://docs.spring.io/spring-boot/docs/2.5.1/gradle-plugin/reference/html/#build-image)
@@ -415,48 +413,6 @@ For further reference, please consider the following sections:
 * [Cloud LoadBalancer](https://docs.spring.io/spring-cloud-commons/docs/current/reference/html/#spring-cloud-loadbalancer)
 * [Resilience4J](https://cloud.spring.io/spring-cloud-static/spring-cloud-circuitbreaker/current/reference/html)
 
-### Guides
-The following guides illustrate how to use some features concretely:
-
-* [Accessing JPA Data with REST](https://spring.io/guides/gs/accessing-data-rest/)
-* [Accessing Neo4j Data with REST](https://spring.io/guides/gs/accessing-neo4j-data-rest/)
-* [Accessing MongoDB Data with REST](https://spring.io/guides/gs/accessing-mongodb-data-rest/)
-* [Building a Hypermedia-Driven RESTful Web Service](https://spring.io/guides/gs/rest-hateoas/)
-* [Producing a SOAP web service](https://spring.io/guides/gs/producing-web-service/)
-* [Creating CRUD UI with Vaadin](https://spring.io/guides/gs/crud-with-vaadin/)
-* [Handling Form Submission](https://spring.io/guides/gs/handling-form-submission/)
-* [Securing a Web Application](https://spring.io/guides/gs/securing-web/)
-* [Spring Boot and OAuth2](https://spring.io/guides/tutorials/spring-boot-oauth2/)
-* [Authenticating a User with LDAP](https://spring.io/guides/gs/authenticating-ldap/)
-* [Okta-Hosted Login Page Example](https://github.com/okta/samples-java-spring/tree/master/okta-hosted-login)
-* [Custom Login Page Example](https://github.com/okta/samples-java-spring/tree/master/custom-login)
-* [Okta Spring Security Resource Server Example](https://github.com/okta/samples-java-spring/tree/master/resource-server)
-* [Accessing Relational Data using JDBC with Spring](https://spring.io/guides/gs/relational-data-access/)
-* [Managing Transactions](https://spring.io/guides/gs/managing-transactions/)
-* [Accessing Data with JPA](https://spring.io/guides/gs/accessing-data-jpa/)
-* [Using Spring Data JDBC](https://github.com/spring-projects/spring-data-examples/tree/master/jdbc/basics)
-* [Acessing data with R2DBC](https://spring.io/guides/gs/accessing-data-r2dbc/)
-* [MyBatis Quick Start](https://github.com/mybatis/spring-boot-starter/wiki/Quick-Start)
-* [Accessing data with MySQL](https://spring.io/guides/gs/accessing-data-mysql/)
-* [Messaging with Redis](https://spring.io/guides/gs/messaging-redis/)
-* [Accessing Data with MongoDB](https://spring.io/guides/gs/accessing-data-mongodb/)
-* [Using Spring for Apache Geode](https://github.com/spring-projects/spring-boot-data-geode/tree/master/spring-geode-samples)
-* [Accessing Data with Neo4j](https://spring.io/guides/gs/accessing-data-neo4j/)
-* [Integrating Data](https://spring.io/guides/gs/integration/)
-* [Messaging with RabbitMQ](https://spring.io/guides/gs/messaging-rabbitmq/)
-* [Samples for using Apache Kafka Streams with Spring Cloud stream](https://github.com/spring-cloud/spring-cloud-stream-samples/tree/master/kafka-streams-samples)
-* [Java Message Service API via Apache ActiveMQ Classic.](https://spring.io/guides/gs/messaging-jms/)
-* [Messaging with JMS](https://spring.io/guides/gs/messaging-jms/)
-* [Using WebSocket to build an interactive web application](https://spring.io/guides/gs/messaging-stomp-websocket/)
-* [Creating a Batch Service](https://spring.io/guides/gs/batch-processing/)
-* [Caching Data with Spring](https://spring.io/guides/gs/caching/)
-* [Building a RESTful Web Service with Spring Boot Actuator](https://spring.io/guides/gs/actuator-service/)
-* [Spring Cloud Contract Verifier Setup](https://cloud.spring.io/spring-cloud-contract/spring-cloud-contract.html#_spring_cloud_contract_verifier_setup)
-* [Centralized Configuration](https://spring.io/guides/gs/centralized-configuration/)
-* [Service Registration and Discovery with Eureka and Spring Cloud](https://spring.io/guides/gs/service-registration-and-discovery/)
-* [Using Spring Cloud Gateway](https://github.com/spring-cloud-samples/spring-cloud-gateway-sample)
-* [Client-side load-balancing with Spring Cloud LoadBalancer](https://spring.io/guides/gs/spring-cloud-loadbalancer/)
-
 ### Additional Links
 These additional references should also help you:
 
@@ -467,61 +423,6 @@ These additional references should also help you:
 * [Various sample apps using Spring Cloud Function](https://github.com/spring-cloud/spring-cloud-function/tree/master/spring-cloud-function-samples)
 * [Declarative REST calls with Spring Cloud OpenFeign sample](https://github.com/spring-cloud-samples/feign-eureka)
 
-## OAuth 2.0 and OIDC with Okta
 
-If you don't have a free Okta developer account, you can create one with [the Okta CLI](https://cli.okta.com):
-
-```bash
-$ okta register
-```
-
-Then, register your Spring Boot app on Okta using:
-
-```bash
-$ okta apps create
-```
-
-Select **Web** > **Okta Spring Boot Starter** and accept the default redirect URIs.
-
-## Observability with Wavefront
-
-If you don't have a Wavefront account, the starter will create a freemium account for you.
-The URL to access the Wavefront Service dashboard is logged on startup.
-
-You can also access your dashboard using the `/actuator/wavefront` endpoint.
-## Spring Native
-
-This project has been configured to let you generate either a lightweight container or a native executable.
-
-### Lightweight Container with Cloud Native Buildpacks
-If you're already familiar with Spring Boot container images support, this is the easiest way to get started with Spring Native.
-Docker should be installed and configured on your machine prior to creating the image, see [the Getting Started section of the reference guide](https://docs.spring.io/spring-native/docs/0.10.0/reference/htmlsingle/#getting-started-buildpacks).
-
-To create the image, run the following goal:
-
-```
-$ ./gradlew bootBuildImage
-```
-
-Then, you can run the app like any other container:
-
-```
-$ docker run --rm -p 8080:8080 springboot-work:0.0.1-SNAPSHOT
-```
-
-### Executable with Native Build Tools
-Use this option if you want to explore more options such as running your tests in a native image.
-The GraalVM native-image compiler should be installed and configured on your machine, see [the Getting Started section of the reference guide](https://docs.spring.io/spring-native/docs/0.10.0/reference/htmlsingle/#getting-started-native-build-tools).
-
-To create the executable, run the following goal:
-
-```
-$ ./gradlew nativeBuild
-```
-
-Then, you can run the app as follows:
-```
-$ build/native-image/springboot-work
-```
 
 
