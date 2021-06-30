@@ -69,6 +69,8 @@
 * [Spring Boot and OAuth2](https://spring.io/guides/tutorials/spring-boot-oauth2/)
 * [Using WebSocket to build an interactive web application](https://spring.io/guides/gs/messaging-stomp-websocket/)
 * [Building a Reactive RESTful Web Service](https://spring.io/guides/gs/reactive-rest-service/)
+* [Java Mail Sender](https://docs.spring.io/spring-boot/docs/2.5.1/reference/htmlsingle/#boot-features-email) 
+
 
 --------------------------------------------------------------------------
 
