@@ -51,25 +51,39 @@
 
 ### Guide 
 
-* Building a RESTful Web Service
-- Learn how to create a RESTful web service with Spring.
+
+* [Managing Transactions](https://spring.io/guides/gs/managing-transactions/) 
+* [MyBatis Quick Start](https://github.com/mybatis/spring-boot-starter/wiki/Quick-Start)        
+* [Accessing Data with JPA](https://spring.io/guides/gs/accessing-data-jpa/)
+* [Accessing data with MySQL](https://spring.io/guides/gs/accessing-data-mysql/)
+* [Creating a Batch Service](https://spring.io/guides/gs/batch-processing/)
+* [Caching Data with Spring](https://spring.io/guides/gs/caching/)
+* [Securing a Web Application](https://spring.io/guides/gs/securing-web/)
+* [Spring Boot and OAuth2](https://spring.io/guides/tutorials/spring-boot-oauth2/)
+* [Using WebSocket to build an interactive web application](https://spring.io/guides/gs/messaging-stomp-websocket/)
+* [Building a Reactive RESTful Web Service](https://spring.io/guides/gs/reactive-rest-service/)
+* [Java Mail Sender](https://docs.spring.io/spring-boot/docs/2.5.1/reference/htmlsingle/#boot-features-email) 
+
+
+* [Building a RESTful Web Service](https://spring.io/guides/gs/rest-service/)
+** Learn how to create a RESTful web service with Spring.
 
 * Scheduling Tasks
 - Learn how to schedule tasks with Spring.
 
-* Consuming a RESTful Web Service
+* [Consuming a RESTful Web Service](https://spring.io/guides/gs/consuming-rest/)
 Learn how to retrieve web page data with Spring's RestTemplate.
 
-* Building Java Projects with Gradle
+* [Building Java Projects with Gradle](https://spring.io/guides/gs/gradle/)
 Learn how to build a Java project with Gradle.
 
-* Building Java Projects with Maven
+* [Building Java Projects with Maven](https://spring.io/guides/gs/maven/)
 Learn how to build a Java project with Maven.
 
-* Accessing Relational Data using JDBC with Spring
+* [Accessing Relational Data using JDBC with Spring](https://spring.io/guides/gs/relational-data-access/) 
 Learn how to access relational data with Spring.
 
-* Uploading Files
+* [Uploading Files](https://spring.io/guides/gs/uploading-files/)
 Learn how to build a Spring application that accepts multi-part file uploads.
 
 * Authenticating a User with LDAP
@@ -87,7 +101,7 @@ Learn how to persist objects and relationships in Neo4j's NoSQL data store.
 * Validating Form Input
 Learn how to perform form validation with Spring.
 
-* Building a RESTful Web Service with Spring Boot Actuator
+* [Building a RESTful Web Service with Spring Boot Actuator](https://spring.io/guides/gs/actuator-service/)
 Learn how to create a RESTful Web service with Spring Boot Actuator.
 
 * Messaging with JMS
@@ -99,7 +113,7 @@ Learn how to create a basic batch-driven solution.
 * Securing a Web Application
 Learn how to protect your web application with Spring Security.
 
-* Building a Hypermedia-Driven RESTful Web Service
+* [Building a Hypermedia-Driven RESTful Web Service](https://spring.io/guides/gs/rest-hateoas/)
 Learn how to create a hypermedia-driven RESTful Web service with Spring.
 
 * Accessing Data in Pivotal GemFire
@@ -120,7 +134,7 @@ Learn how to work with JPA data persistence using Spring Data JPA.
 * Accessing Data with MongoDB
 Learn how to persist data in MongoDB.
 
-* Serving Web Content with Spring MVC
+* [Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content/)
 Learn how to create a web page with Spring MVC and Thymeleaf.
 
 * Converting a Spring Boot JAR Application to a WAR
@@ -132,7 +146,7 @@ Learn how to create asynchronous service methods.
 * Handling Form Submission
 Learn how to create and submit a web form with Spring.
 
-* Building an Application with Spring Boot
+* [Building an Application with Spring Boot](https://spring.io/guides/gs/spring-boot/)
 Learn how to build an application with minimal configuration.
 
 * Using WebSocket to build an interactive web application
@@ -147,7 +161,7 @@ Learn how to retrieve web page data with AngularJS.
 * Consuming a RESTful Web Service with jQuery
 Learn how to retrieve web page data with jQuery.
 
-* Enabling Cross Origin Requests for a RESTful Web Service
+* [Enabling Cross Origin Requests for a RESTful Web Service](https://spring.io/guides/gs/rest-service-cors/)
 Learn how to create a RESTful web service with Spring that support Cross-Origin Resource Sharing (CORS).
 
 * Consuming a SOAP web service
@@ -201,7 +215,7 @@ Learn how to set up and manage user accounts on MySQL and how to configure Sprin
 * Creating a Multi Module Project
 Learn how to build a library and package it for consumption in a Spring Boot application
 
-* Creating API Documentation with Restdocs
+* [Creating API Documentation with Restdocs](https://spring.io/guides/gs/testing-restdocs/)
 Learn how to generate documentation for HTTP endpoints using Spring Restdocs
 
 * Messaging with Google Cloud Pub/Sub
@@ -255,29 +269,6 @@ Learn how to send application metrics to Tanzu Observability
 * Building a Guide with VS Code
 Learn how to import and work with a Spring Getting Started Guide in VS Code.
 
-* [Building an Application with Spring Boot](https://spring.io/guides/gs/spring-boot/)
-* [Building Java Projects with Gradle](https://spring.io/guides/gs/gradle/)
-* [Building Java Projects with Maven](https://spring.io/guides/gs/maven/)
-* [Uploading Files](https://spring.io/guides/gs/uploading-files/)
-* [Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content/)
-* [Building a RESTful Web Service](https://spring.io/guides/gs/rest-service/)
-* [Building a RESTful Web Service with Spring Boot Actuator](https://spring.io/guides/gs/actuator-service/)
-* [Consuming a RESTful Web Service](https://spring.io/guides/gs/consuming-rest/)
-* [Building a Hypermedia-Driven RESTful Web Service](https://spring.io/guides/gs/rest-hateoas/)
-* [Enabling Cross Origin Requests for a RESTful Web Service](https://spring.io/guides/gs/rest-service-cors/)
-* [Creating API Documentation with Restdocs](https://spring.io/guides/gs/testing-restdocs/)
-* [Accessing Relational Data using JDBC with Spring](https://spring.io/guides/gs/relational-data-access/) 
-* [Managing Transactions](https://spring.io/guides/gs/managing-transactions/) 
-* [MyBatis Quick Start](https://github.com/mybatis/spring-boot-starter/wiki/Quick-Start)        
-* [Accessing Data with JPA](https://spring.io/guides/gs/accessing-data-jpa/)
-* [Accessing data with MySQL](https://spring.io/guides/gs/accessing-data-mysql/)
-* [Creating a Batch Service](https://spring.io/guides/gs/batch-processing/)
-* [Caching Data with Spring](https://spring.io/guides/gs/caching/)
-* [Securing a Web Application](https://spring.io/guides/gs/securing-web/)
-* [Spring Boot and OAuth2](https://spring.io/guides/tutorials/spring-boot-oauth2/)
-* [Using WebSocket to build an interactive web application](https://spring.io/guides/gs/messaging-stomp-websocket/)
-* [Building a Reactive RESTful Web Service](https://spring.io/guides/gs/reactive-rest-service/)
-* [Java Mail Sender](https://docs.spring.io/spring-boot/docs/2.5.1/reference/htmlsingle/#boot-features-email) 
 
 ### Topical Guides
 * [Spring Security Architecture](https://spring.io/guides/topicals/spring-security-architecture/)
@@ -285,15 +276,16 @@ Learn how to import and work with a Spring Getting Started Guide in VS Code.
 
 * [Spring Boot Docker](https://spring.io/guides/topicals/spring-boot-docker/)
 - Topical guide to using Docker and how to create container images for Spring Boot applications
+
 * [Spring on Kubernetes](https://spring.io/guides/topicals/spring-on-kubernetes/)
 - Topic guide to Spring and Kubernetes
 
 ### Tutorials
 * [Building REST services with Spring](https://spring.io/guides/tutorials/rest/) 
-# Learn how to easily build RESTful services with Spring
+- Learn how to easily build RESTful services with Spring
 
 * [Spring Security and Angular]
-# A tutorial on how to use Spring Security with a single page application with various backend architectures, ranging from a simple single server to an API gateway with OAuth2 authentication.
+- A tutorial on how to use Spring Security with a single page application with various backend architectures, ranging from a simple single server to an API gateway with OAuth2 authentication.
 
 *  React.js and Spring Data REST
 - A tutorial based on the 5-part blog series by Greg Turnquist
