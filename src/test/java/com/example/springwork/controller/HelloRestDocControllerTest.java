@@ -1,5 +1,6 @@
 package com.example.springwork.controller;
 
+
 import static org.hamcrest.Matchers.containsString;
 import static org.springframework.restdocs.mockmvc.MockMvcRestDocumentation.document;
 import static org.springframework.restdocs.payload.PayloadDocumentation.fieldWithPath;
@@ -24,7 +25,7 @@ public class HelloRestDocControllerTest {
 
 	@Test
 	public void shouldReturnDefaultMessage() throws Exception {
-		this.mockMvc.perform(get("/helloRestDoc")).andDo(print()).andExpect(status().isOk())
+		this.mockMvc.perform(get("/hello-rest-doc")).andDo(print()).andExpect(status().isOk())
 				.andExpect(content().string(containsString("Hello, World")))
                 .andDo(document("HelloRestDocController", responseFields(fieldWithPath("message").description("The welcome message for the user."))));
 	}

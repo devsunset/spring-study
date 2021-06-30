@@ -16,7 +16,7 @@ public class HelloRestCorsController {
 
 	private final AtomicLong counter = new AtomicLong();
 	@CrossOrigin(origins = "http://localhost:8080")
-	@GetMapping("/helloRestCors")
+	@GetMapping("/hello-rest-cors")
 	public Hello hello(@RequestParam(required = false, defaultValue = "World - RestController CORS") String name) {
 		return new Hello(counter.incrementAndGet(), String.format(template, name));
 	}
