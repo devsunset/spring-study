@@ -53,7 +53,7 @@
 * [Building a RESTful Web Service](https://spring.io/guides/gs/rest-service/)
 Learn how to create a RESTful web service with Spring.
 
-* Scheduling Tasks
+* [Scheduling Tasks](https://spring.io/guides/gs/scheduling-tasks/)
 Learn how to schedule tasks with Spring.
 
 * [Consuming a RESTful Web Service](https://spring.io/guides/gs/consuming-rest/)
@@ -122,10 +122,10 @@ Learn how to persist data in MongoDB.
 * [Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content/)
 Learn how to create a web page with Spring MVC and Thymeleaf.
 
-* Converting a Spring Boot JAR Application to a WAR
+* [Converting a Spring Boot JAR Application to a WAR](https://spring.io/guides/gs/convert-jar-to-war/)
 Learn how to convert your Spring Boot JAR-based application to a WAR file.
 
-* Creating Asynchronous Methods
+* [Creating Asynchronous Methods](https://spring.io/guides/gs/async-method/)
 Learn how to create asynchronous service methods.
 
 * Handling Form Submission
@@ -152,7 +152,7 @@ Learn how to create a RESTful web service with Spring that support Cross-Origin 
 * Consuming a SOAP web service
 Learn how to create a client that consumes a WSDL-based service
 
-* Accessing JPA Data with REST
+* [Accessing JPA Data with REST](https://spring.io/guides/gs/accessing-data-rest/)
 Learn how to work with RESTful, hypermedia-based data persistence using Spring Data REST.
 
 * Accessing Neo4j Data with REST
@@ -173,7 +173,7 @@ Learn how to cache data in memory with Spring
 * Deploying to Cloud Foundry from STS
 Learn how to deploy a Spring application to Cloud Foundry from STS
 
-* Spring Boot with Docker
+* [Spring Boot with Docker](https://spring.io/guides/gs/spring-boot-docker/)
 Learn how to create a Docker container from a Spring Boot application with Maven or Gradle
 
 * Working a Getting Started guide with IntelliJ IDEA
@@ -251,10 +251,8 @@ How to Use Spring Cloud Circuit Breaker
 * Observability with Spring
 Learn how to send application metrics to Tanzu Observability
 
-* Building a Guide with VS Code
+* [Building a Guide with VS Code](https://spring.io/guides/gs/guides-with-vscode/)
 Learn how to import and work with a Spring Getting Started Guide in VS Code.
-
-* [MyBatis Quick Start](https://github.com/mybatis/spring-boot-starter/wiki/Quick-Start)  
 
 
 ### Topical Guides
@@ -291,13 +289,9 @@ Learn how to create metrics and tracing with Spring Boot
 
 
 ```
- ALL
+ 
+ 
 ```
-
-
-
-
-
 
 
 
