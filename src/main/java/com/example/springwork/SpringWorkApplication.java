@@ -11,6 +11,7 @@ import com.example.springwork.dao.mapper.CityMapper;
 import com.example.springwork.dao.repository.CustomerRepository;
 import com.example.springwork.domain.City;
 import com.example.springwork.domain.Customer;
+import com.example.springwork.domain.Quote;
 import com.example.springwork.service.BookingService;
 import com.example.springwork.support.cache.BookRepository;
 
@@ -21,11 +22,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.scheduling.annotation.EnableScheduling;
+import org.springframework.web.client.RestTemplate;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
@@ -211,6 +214,20 @@ public class SpringWorkApplication {
 		log.info("isbn-1234 -->" + bookRepository.getByIsbn("isbn-1234"));
 		log.info("isbn-1234 -->" + bookRepository.getByIsbn("isbn-1234"));
 	  };
+	}
+
+	@Bean
+	public RestTemplate restTemplate(RestTemplateBuilder builder) {
+		return builder.build();
+	}
+
+	@Bean
+	public CommandLineRunner run(RestTemplate restTemplate) throws Exception {
+		return args -> {
+			Quote quote = restTemplate.getForObject(
+					"https://quoters.apps.pcfone.io/api/random", Quote.class);
+			log.info(quote.toString());
+		};
 	}
 
 	@Bean
