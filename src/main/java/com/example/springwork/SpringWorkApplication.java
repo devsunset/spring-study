@@ -3,16 +3,20 @@ package com.example.springwork;
 import java.sql.Connection;
 import java.util.Arrays;
 import java.util.List;
+import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.Executor;
 import java.util.stream.Collectors;
 
 import javax.sql.DataSource;
 
 import com.example.springwork.dao.mapper.CityMapper;
 import com.example.springwork.dao.repository.CustomerRepository;
+import com.example.springwork.domain.AsyncUser;
 import com.example.springwork.domain.City;
 import com.example.springwork.domain.Customer;
 import com.example.springwork.domain.Quote;
 import com.example.springwork.service.BookingService;
+import com.example.springwork.service.GitHubLookupService;
 import com.example.springwork.support.cache.BookRepository;
 
 import org.mybatis.spring.annotation.MapperScan;
@@ -27,7 +31,9 @@ import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.scheduling.annotation.EnableAsync;
 import org.springframework.scheduling.annotation.EnableScheduling;
+import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
@@ -37,6 +43,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 @SpringBootApplication
 @EnableCaching
 @EnableScheduling
+@EnableAsync
 public class SpringWorkApplication {
 
 	private static final Logger log = LoggerFactory.getLogger(SpringWorkApplication.class);
@@ -54,6 +61,9 @@ public class SpringWorkApplication {
 
 	@Autowired
 	BookRepository bookRepository;
+
+	@Autowired
+	GitHubLookupService gitHubLookupService;
 
 	public SpringWorkApplication(CityMapper cityMapper) {
 	  this.cityMapper = cityMapper;
@@ -228,6 +238,39 @@ public class SpringWorkApplication {
 					"https://quoters.apps.pcfone.io/api/random", Quote.class);
 			log.info(quote.toString());
 		};
+	}
+
+	@Bean
+	public Executor taskExecutor() {
+		ThreadPoolTaskExecutor executor = new ThreadPoolTaskExecutor();
+		executor.setCorePoolSize(2);
+		executor.setMaxPoolSize(2);
+		executor.setQueueCapacity(500);
+		executor.setThreadNamePrefix("GithubLookup-");
+		executor.initialize();
+		return executor;
+	}
+
+	@Bean
+	CommandLineRunner sampleAsyncCommandLineRunner() {
+	  return args -> {
+		// Start the clock
+		long start = System.currentTimeMillis();
+
+		// Kick of multiple, asynchronous lookups
+		CompletableFuture<AsyncUser> page1 = gitHubLookupService.findUser("PivotalSoftware");
+		CompletableFuture<AsyncUser> page2 = gitHubLookupService.findUser("CloudFoundry");
+		CompletableFuture<AsyncUser> page3 = gitHubLookupService.findUser("Spring-Projects");
+	
+		// Wait until they are all done
+		CompletableFuture.allOf(page1,page2,page3).join();
+	
+		// Print results, including elapsed time
+		log.info("Elapsed time: " + (System.currentTimeMillis() - start));
+		log.info("--> " + page1.get());
+		log.info("--> " + page2.get());
+		log.info("--> " + page3.get());
+	  };
 	}
 
 	@Bean
