@@ -131,7 +131,7 @@ Learn how to build an application with minimal configuration.
 * [Using WebSocket to build an interactive web application](https://spring.io/guides/gs/messaging-stomp-websocket/)
 Learn how to the send and receive messages between a browser and the server over a WebSocket
 
-* Working a Getting Started guide with STS
+* [Working a Getting Started guide with STS](https://spring.io/guides/gs/sts/)
 Learn how to import a Getting Started guide with Spring Tool Suite (STS).
 
 * Consuming a RESTful Web Service with AngularJS
