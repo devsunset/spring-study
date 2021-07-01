@@ -4,10 +4,6 @@
 
 * [Spring](https://spring.io/)
 
-* [Spring Learn](https://spring.io/learn)
-* [Spring Guides](https://spring.io/guides)
-* [Spring Projects](https://spring.io/projects) 
-
 # ####################################################################
 
 # Why Spring
