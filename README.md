@@ -65,7 +65,7 @@ Learn how to access relational data with Spring.
 * [Uploading Files](https://spring.io/guides/gs/uploading-files/)
 Learn how to build a Spring application that accepts multi-part file uploads.
 
-* Authenticating a User with LDAP
+* [Authenticating a User with LDAP](https://spring.io/guides/gs/authenticating-ldap/)
 Learn how to secure an application with LDAP.
 
 * Messaging with Redis
@@ -77,7 +77,7 @@ Learn how to create a simple publish-and-subscribe application with Spring and R
 * Accessing Data with Neo4j
 Learn how to persist objects and relationships in Neo4j's NoSQL data store.
 
-* Validating Form Input
+* [Validating Form Input](https://spring.io/guides/gs/validating-form-input/)
 Learn how to perform form validation with Spring.
 
 * [Building a RESTful Web Service with Spring Boot Actuator](https://spring.io/guides/gs/actuator-service/)
@@ -98,7 +98,7 @@ Learn how to create a hypermedia-driven RESTful Web service with Spring.
 * Accessing Data in Pivotal GemFire
 Learn how to build an application using Gemfire's data fabric.
 
-* Integrating Data
+* [Integrating Data](https://spring.io/guides/gs/integration/)
 Learn how to build an application that uses Spring Integration to fetch data, process it, and write it to a file.
 
 * Caching Data with Pivotal GemFire
@@ -122,7 +122,7 @@ Learn how to convert your Spring Boot JAR-based application to a WAR file.
 * [Creating Asynchronous Methods](https://spring.io/guides/gs/async-method/)
 Learn how to create asynchronous service methods.
 
-* Handling Form Submission
+* [Handling Form Submission](https://spring.io/guides/gs/handling-form-submission/)
 Learn how to create and submit a web form with Spring.
 
 * [Building an Application with Spring Boot](https://spring.io/guides/gs/spring-boot/)
@@ -143,7 +143,7 @@ Learn how to retrieve web page data with jQuery.
 * [Enabling Cross Origin Requests for a RESTful Web Service](https://spring.io/guides/gs/rest-service-cors/)
 Learn how to create a RESTful web service with Spring that support Cross-Origin Resource Sharing (CORS).
 
-* Consuming a SOAP web service
+* [Consuming a SOAP web service](https://spring.io/guides/gs/consuming-web-service/)
 Learn how to create a client that consumes a WSDL-based service
 
 * [Accessing JPA Data with REST](https://spring.io/guides/gs/accessing-data-rest/)
@@ -158,7 +158,7 @@ Learn how to work with RESTful, hypermedia-based data persistence using Spring D
 * Accessing Data in Pivotal GemFire with REST
 Learn how to work with RESTful, hypermedia-based data persistence using Spring Data REST.
 
-* Producing a SOAP web service
+* [Producing a SOAP web service](https://spring.io/guides/gs/producing-web-service/)
 Learn how to create a SOAP-based web service with Spring.
 
 * [Caching Data with Spring](https://spring.io/guides/gs/caching/)
@@ -170,7 +170,7 @@ Learn how to deploy a Spring application to Cloud Foundry from STS
 * [Spring Boot with Docker](https://spring.io/guides/gs/spring-boot-docker/)
 Learn how to create a Docker container from a Spring Boot application with Maven or Gradle
 
-* Working a Getting Started guide with IntelliJ IDEA
+* [Working a Getting Started guide with IntelliJ IDEA](https://spring.io/guides/gs/intellij-idea/)
 Learn how to work a Getting Started guide with IntelliJ IDEA.
 
 * Creating CRUD UI with Vaadin
@@ -185,7 +185,7 @@ Learn how to manage application settings from an external, centralized source
 * Routing and Filtering
 Learn how to route and filter requests to a microservice using Netflix Zuul
 
-* Testing the Web Layer
+* [Testing the Web Layer](https://spring.io/guides/gs/testing-web/)
 Learn how to test Spring Boot applications and MVC controllers.
 
 * [Accessing data with MySQL](https://spring.io/guides/gs/accessing-data-mysql/)
@@ -233,7 +233,7 @@ Learn how to build, deploy and launch streaming and batch data pipelines using S
 * Spring Cloud Task
 Learn how to build and test Spring Cloud Task Applications
 
-* Spring Boot Kubernetes
+* [Spring Boot Kubernetes](https://spring.io/guides/gs/spring-boot-kubernetes/)
 Deploy a Spring Boot application to Kubernetes
 
 * Accessing data with R2DBC
@@ -242,7 +242,7 @@ Learn how to access relational data with the reactive protocol R2DBC
 * Spring Cloud Circuit Breaker Guide
 How to Use Spring Cloud Circuit Breaker
 
-* Observability with Spring
+* [Observability with Spring](https://spring.io/guides/gs/tanzu-observability/)
 Learn how to send application metrics to Tanzu Observability
 
 * [Building a Guide with VS Code](https://spring.io/guides/gs/guides-with-vscode/)
@@ -269,7 +269,7 @@ A tutorial on how to use Spring Security with a single page application with var
 * React.js and Spring Data REST
 A tutorial based on the 5-part blog series by Greg Turnquist
 
-* Spring Boot and OAuth2
+* [Spring Boot and OAuth2](https://spring.io/guides/tutorials/spring-boot-oauth2/)
 A tutorial on "social" login and single sign on with Facebook and Github
 
 * Building web applications with Spring Boot and Kotlin
