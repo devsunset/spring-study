@@ -20,6 +20,7 @@ import com.example.springwork.service.FileSystemStorageService;
 import com.example.springwork.service.GitHubLookupService;
 import com.example.springwork.support.cache.BookRepository;
 import com.example.springwork.support.etc.StorageProperties;
+import com.example.springwork.support.webflux.webclient.GreetingWebClient;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.slf4j.Logger;
@@ -78,6 +79,9 @@ public class SpringWorkApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(SpringWorkApplication.class, args);
+
+		GreetingWebClient gwc = new GreetingWebClient();
+		log.info("------- WEBFLUX ------ "+gwc.getResult());
 	}
 
 	@Bean
@@ -287,7 +291,7 @@ public class SpringWorkApplication {
 			fileSystemStorageService.deleteAll();
 			fileSystemStorageService.init();
 		};
-	  }
+	}
 
 	@Bean
 	public WebMvcConfigurer corsConfigurer() {
