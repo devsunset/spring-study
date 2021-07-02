@@ -143,7 +143,7 @@ Learn how to retrieve web page data with jQuery.
 * [Enabling Cross Origin Requests for a RESTful Web Service](https://spring.io/guides/gs/rest-service-cors/)
 Learn how to create a RESTful web service with Spring that support Cross-Origin Resource Sharing (CORS).
 
-* [Consuming a SOAP web service](https://spring.io/guides/gs/consuming-web-service/)
+* Consuming a SOAP web service
 Learn how to create a client that consumes a WSDL-based service
 
 * [Accessing JPA Data with REST](https://spring.io/guides/gs/accessing-data-rest/)
@@ -158,7 +158,7 @@ Learn how to work with RESTful, hypermedia-based data persistence using Spring D
 * Accessing Data in Pivotal GemFire with REST
 Learn how to work with RESTful, hypermedia-based data persistence using Spring Data REST.
 
-* [Producing a SOAP web service](https://spring.io/guides/gs/producing-web-service/)
+* Producing a SOAP web service
 Learn how to create a SOAP-based web service with Spring.
 
 * [Caching Data with Spring](https://spring.io/guides/gs/caching/)
