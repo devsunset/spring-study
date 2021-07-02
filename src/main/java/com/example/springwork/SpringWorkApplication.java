@@ -16,8 +16,10 @@ import com.example.springwork.domain.City;
 import com.example.springwork.domain.Customer;
 import com.example.springwork.domain.Quote;
 import com.example.springwork.service.BookingService;
+import com.example.springwork.service.FileSystemStorageService;
 import com.example.springwork.service.GitHubLookupService;
 import com.example.springwork.support.cache.BookRepository;
+import com.example.springwork.support.etc.StorageProperties;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.slf4j.Logger;
@@ -26,6 +28,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.context.ApplicationContext;
@@ -44,6 +47,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 @EnableCaching
 @EnableScheduling
 @EnableAsync
+@EnableConfigurationProperties(StorageProperties.class)
 public class SpringWorkApplication {
 
 	private static final Logger log = LoggerFactory.getLogger(SpringWorkApplication.class);
@@ -64,6 +68,9 @@ public class SpringWorkApplication {
 
 	@Autowired
 	GitHubLookupService gitHubLookupService;
+
+	@Autowired
+	FileSystemStorageService fileSystemStorageService;
 
 	public SpringWorkApplication(CityMapper cityMapper) {
 	  this.cityMapper = cityMapper;
@@ -272,6 +279,15 @@ public class SpringWorkApplication {
 		log.info("--> " + page3.get());
 	  };
 	}
+
+
+	@Bean
+	CommandLineRunner sampleUploadInitCommandLineRunner() {
+		return args -> {
+			fileSystemStorageService.deleteAll();
+			fileSystemStorageService.init();
+		};
+	  }
 
 	@Bean
 	public WebMvcConfigurer corsConfigurer() {
