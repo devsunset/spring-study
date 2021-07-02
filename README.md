@@ -98,7 +98,7 @@ Learn how to create a hypermedia-driven RESTful Web service with Spring.
 * Accessing Data in Pivotal GemFire
 Learn how to build an application using Gemfire's data fabric.
 
-* [Integrating Data](https://spring.io/guides/gs/integration/)
+* Integrating Data
 Learn how to build an application that uses Spring Integration to fetch data, process it, and write it to a file.
 
 * Caching Data with Pivotal GemFire

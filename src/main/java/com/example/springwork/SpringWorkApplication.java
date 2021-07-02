@@ -52,7 +52,6 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 @EnableScheduling
 @EnableAsync
 @EnableConfigurationProperties(StorageProperties.class)
-@ImportResource("/integration/integration.xml")
 public class SpringWorkApplication {
 
 	private static final Logger log = LoggerFactory.getLogger(SpringWorkApplication.class);
@@ -86,11 +85,6 @@ public class SpringWorkApplication {
 
 		GreetingWebClient gwc = new GreetingWebClient();
 		log.info("------- WEBFLUX ------ "+gwc.getResult());
-
-		// ConfigurableApplicationContext ctx = new SpringApplication(SpringWorkApplication.class).run(args);
-		// System.out.println("Hit Enter to terminate");
-		// System.in.read();
-		// ctx.close();
 	}
 
 	@Bean
