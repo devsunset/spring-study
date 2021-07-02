@@ -54,13 +54,14 @@ public class SpringWorkApplication {
 
 	private static final Logger log = LoggerFactory.getLogger(SpringWorkApplication.class);
 	
-	private final CityMapper cityMapper;
-
 	@Autowired
     DataSource dataSource;
 
 	@Autowired
 	JdbcTemplate jdbcTemplate;
+
+	@Autowired
+    CityMapper cityMapper;
 
 	@Autowired
 	BookingService bookingService;
@@ -73,10 +74,6 @@ public class SpringWorkApplication {
 
 	@Autowired
 	FileSystemStorageService fileSystemStorageService;
-
-	public SpringWorkApplication(CityMapper cityMapper) {
-	  this.cityMapper = cityMapper;
-	}
 
 	public static void main(String[] args) throws IOException {
 		SpringApplication.run(SpringWorkApplication.class, args);
@@ -183,7 +180,7 @@ public class SpringWorkApplication {
 		city.setState("CA");
 		city.setCountry("US");
 		cityMapper.insert(city);
-		log.info(this.cityMapper.findById(city.getId()).toString());
+		log.info(cityMapper.findById(city.getId()).toString());
 	  };
 	}
 
@@ -284,7 +281,6 @@ public class SpringWorkApplication {
 		log.info("--> " + page3.get());
 	  };
 	}
-
 
 	@Bean
 	CommandLineRunner sampleUploadInitCommandLineRunner() {
