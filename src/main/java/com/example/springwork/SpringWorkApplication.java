@@ -1,5 +1,6 @@
 package com.example.springwork;
 
+import java.io.IOException;
 import java.sql.Connection;
 import java.util.Arrays;
 import java.util.List;
@@ -33,7 +34,9 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
 import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ImportResource;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.scheduling.annotation.EnableAsync;
 import org.springframework.scheduling.annotation.EnableScheduling;
@@ -49,6 +52,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 @EnableScheduling
 @EnableAsync
 @EnableConfigurationProperties(StorageProperties.class)
+@ImportResource("/integration/integration.xml")
 public class SpringWorkApplication {
 
 	private static final Logger log = LoggerFactory.getLogger(SpringWorkApplication.class);
@@ -77,11 +81,16 @@ public class SpringWorkApplication {
 	  this.cityMapper = cityMapper;
 	}
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		SpringApplication.run(SpringWorkApplication.class, args);
 
 		GreetingWebClient gwc = new GreetingWebClient();
 		log.info("------- WEBFLUX ------ "+gwc.getResult());
+
+		// ConfigurableApplicationContext ctx = new SpringApplication(SpringWorkApplication.class).run(args);
+		// System.out.println("Hit Enter to terminate");
+		// System.in.read();
+		// ctx.close();
 	}
 
 	@Bean
