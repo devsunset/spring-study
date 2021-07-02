@@ -1,4 +1,4 @@
-package com.example.springwork.batch.completionnotification;
+package com.example.springwork.support.batch.completionnotification;
 
 import com.example.springwork.domain.Person;
 

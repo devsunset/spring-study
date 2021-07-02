@@ -1,4 +1,4 @@
-package com.example.springwork.batch.processor;
+package com.example.springwork.support.batch.processor;
 
 import com.example.springwork.domain.Person;
 

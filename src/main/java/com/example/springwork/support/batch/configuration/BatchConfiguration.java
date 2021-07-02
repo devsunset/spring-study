@@ -1,10 +1,10 @@
-package com.example.springwork.batch.configuration;
+package com.example.springwork.support.batch.configuration;
 
 import javax.sql.DataSource;
 
-import com.example.springwork.batch.completionnotification.JobCompletionNotificationListener;
-import com.example.springwork.batch.processor.PersonItemProcessor;
 import com.example.springwork.domain.Person;
+import com.example.springwork.support.batch.completionnotification.JobCompletionNotificationListener;
+import com.example.springwork.support.batch.processor.PersonItemProcessor;
 
 import org.springframework.batch.core.Step;
 import org.springframework.batch.core.configuration.annotation.EnableBatchProcessing;
