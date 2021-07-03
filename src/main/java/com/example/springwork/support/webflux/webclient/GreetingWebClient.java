@@ -10,6 +10,7 @@ import reactor.core.publisher.Mono;
 public class GreetingWebClient {
   private WebClient client = WebClient.create("http://localhost:8080");
 
+  @Deprecated
   private Mono<ClientResponse> result = client.get()
       .uri("/webflux")
       .accept(MediaType.TEXT_PLAIN)
@@ -18,4 +19,5 @@ public class GreetingWebClient {
   public String getResult() {
     return ">> result = " + result.flatMap(res -> res.bodyToMono(String.class)).block();
   }
+  
 }
