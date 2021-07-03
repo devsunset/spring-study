@@ -9,7 +9,7 @@ import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
 import java.util.stream.Stream;
 
-import com.example.springwork.support.etc.StorageProperties;
+import com.example.springwork.support.configuration.StorageProperties;
 import com.example.springwork.support.exception.StorageException;
 import com.example.springwork.support.exception.StorageFileNotFoundException;
 

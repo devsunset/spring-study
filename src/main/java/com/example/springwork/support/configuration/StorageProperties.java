@@ -1,4 +1,4 @@
-package com.example.springwork.support.etc;
+package com.example.springwork.support.configuration;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 

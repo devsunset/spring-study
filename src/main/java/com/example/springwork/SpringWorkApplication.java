@@ -20,7 +20,7 @@ import com.example.springwork.service.BookingService;
 import com.example.springwork.service.FileSystemStorageService;
 import com.example.springwork.service.GitHubLookupService;
 import com.example.springwork.support.cache.BookRepository;
-import com.example.springwork.support.etc.StorageProperties;
+import com.example.springwork.support.configuration.StorageProperties;
 import com.example.springwork.support.webflux.webclient.GreetingWebClient;
 
 import org.mybatis.spring.annotation.MapperScan;
