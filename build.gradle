@@ -75,6 +75,10 @@ dependencies {
 	testImplementation('org.springframework.boot:spring-boot-starter-test') {
 			exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
 	}
+
+	implementation("org.springframework.ldap:spring-ldap-core")
+	implementation("org.springframework.security:spring-security-ldap")
+	implementation("com.unboundid:unboundid-ldapsdk")
 }
 
 dependencyManagement {
