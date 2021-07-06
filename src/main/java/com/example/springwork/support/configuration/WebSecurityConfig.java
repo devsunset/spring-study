@@ -23,16 +23,24 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 	protected void configure(HttpSecurity http) throws Exception {
 		http
 			.authorizeRequests()
+				.antMatchers(
+								"/h2-console/**" 
+						).permitAll()
 				.antMatchers("/*", "/*").permitAll()
-				.antMatchers("/home", "/home").permitAll()
+				// .antMatchers("/home", "/home").permitAll()
 				.anyRequest().authenticated()
 				.and()
-			.formLogin()
-				.loginPage("/login")
-				.permitAll()
+				.csrf()
+				.ignoringAntMatchers("/h2-console/**")
 				.and()
-			.logout()
-				.permitAll();
+				.formLogin()
+					.loginPage("/login")
+					.permitAll()
+					.and()
+				.logout()
+					.permitAll();
+
+			http.headers().frameOptions().disable();
 	}
 
 	@Bean

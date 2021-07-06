@@ -282,9 +282,9 @@ Build a chat application with Reactive Web services from Spring, Kotlin, WebFlux
 Learn how to create metrics and tracing with Spring Boot
 
 ### ETC
-
-* [Spring Session - database](https://docs.spring.io/spring-session/docs/current/reference/html5/guides/java-jdbc.html)
-* Spring Session - Redis - https://www.baeldung.com/spring-session
+* [Spring Session - HttpSession (Quick Start)](https://docs.spring.io/spring-session/docs/current/reference/html5/guides/java-jdbc.html)
+* [Spring Session - database](https://www.baeldung.com/spring-session-jdbc)
+* [Spring Session - Redis](https://www.baeldung.com/spring-session)
 
 
 ### Additional Links Guides - [Spring Guides GitHub](https://github.com/spring-guides)
