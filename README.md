@@ -285,6 +285,7 @@ Learn how to create metrics and tracing with Spring Boot
 * [Spring Session - HttpSession (Quick Start)](https://docs.spring.io/spring-session/docs/current/reference/html5/guides/java-jdbc.html)
 * [Spring Session - database](https://www.baeldung.com/spring-session-jdbc)
 * [Spring Session - Redis](https://www.baeldung.com/spring-session)
+* [Java Mail Sender](https://docs.spring.io/spring-boot/docs/2.5.2/reference/htmlsingle/#boot-features-email)
 
 
 ### Additional Links Guides - [Spring Guides GitHub](https://github.com/spring-guides)
