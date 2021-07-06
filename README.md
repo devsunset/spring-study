@@ -283,7 +283,7 @@ Learn how to create metrics and tracing with Spring Boot
 
 ### ETC
 
-* [Spring Session - HttpSession (Quick Start)](https://docs.spring.io/spring-session/docs/current/reference/html5/guides/java-jdbc.html)
+* [Spring Session - database](https://docs.spring.io/spring-session/docs/current/reference/html5/guides/java-jdbc.html)
 * Spring Session - Redis - https://www.baeldung.com/spring-session
 
 
