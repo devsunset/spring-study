@@ -13,14 +13,11 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.transaction.annotation.Transactional;
 
-import lombok.extern.slf4j.Slf4j;
-
-@Slf4j
 @SpringBootTest
 @RunWith(SpringRunner.class)
 public class ProductServiceTest {
 
-    private static final Logger log = LoggerFactory.getLogger(ProductServiceTest.class);
+    private final static Logger log = LoggerFactory.getLogger(ProductServiceTest.class);
 
     @Autowired
     private ProductService productService;
