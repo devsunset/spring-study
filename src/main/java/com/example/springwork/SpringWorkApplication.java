@@ -43,13 +43,16 @@ import org.springframework.web.client.RestTemplate;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
-// @MapperScan(basePackageClasses = SpringWorkApplication.class)
-@MapperScan(value = {"com.example.springwork.dao.*"})
+import springfox.documentation.oas.annotations.EnableOpenApi;
+
 @SpringBootApplication
 @EnableCaching
 @EnableScheduling
 @EnableAsync
+@EnableOpenApi
 @EnableConfigurationProperties(StorageProperties.class)
+@MapperScan(value = {"com.example.springwork.dao.*"})
+// @MapperScan(basePackageClasses = SpringWorkApplication.class)
 public class SpringWorkApplication {
 
 	private static final Logger log = LoggerFactory.getLogger(SpringWorkApplication.class);

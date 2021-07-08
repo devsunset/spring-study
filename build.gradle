@@ -78,6 +78,10 @@ dependencies {
 	implementation("org.springframework.ldap:spring-ldap-core")
 	implementation("org.springframework.security:spring-security-ldap")
 	implementation("com.unboundid:unboundid-ldapsdk")
+
+	implementation("io.springfox:springfox-swagger2:3.0.0")
+	implementation("io.springfox:springfox-swagger-ui:3.0.0") 
+	implementation "io.springfox:springfox-boot-starter:3.0.0"
 }
 
 dependencyManagement {
