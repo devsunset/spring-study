@@ -7,7 +7,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import com.example.springwork.support.status.Status;
+import com.example.springwork.support.enums.Status;
 
 @Entity
 @Table(name = "CUSTOMER_ORDER")

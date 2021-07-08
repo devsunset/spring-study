@@ -4,7 +4,7 @@ import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.*;
 
 import com.example.springwork.controller.OrderController;
 import com.example.springwork.domain.Order;
-import com.example.springwork.support.status.Status;
+import com.example.springwork.support.enums.Status;
 
 import org.springframework.hateoas.EntityModel;
 import org.springframework.hateoas.server.RepresentationModelAssembler;

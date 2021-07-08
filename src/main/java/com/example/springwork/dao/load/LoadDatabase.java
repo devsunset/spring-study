@@ -2,7 +2,7 @@ package com.example.springwork.dao.load;
 
 import com.example.springwork.domain.Employee;
 import com.example.springwork.domain.Order;
-import com.example.springwork.support.status.Status;
+import com.example.springwork.support.enums.Status;
 import com.example.springwork.dao.repository.EmployeeRepository;
 import com.example.springwork.dao.repository.OrderRepository;
 

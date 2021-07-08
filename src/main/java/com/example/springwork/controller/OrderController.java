@@ -6,8 +6,8 @@ import java.util.stream.Collectors;
 import com.example.springwork.dao.repository.OrderRepository;
 import com.example.springwork.domain.Order;
 import com.example.springwork.support.assembler.OrderModelAssembler;
+import com.example.springwork.support.enums.Status;
 import com.example.springwork.support.exception.OrderNotFoundException;
-import com.example.springwork.support.status.Status;
 
 import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.*;
 

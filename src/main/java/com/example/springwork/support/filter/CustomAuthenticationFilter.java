@@ -5,6 +5,7 @@ import java.io.IOException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.example.springwork.domain.Admin;
 import com.example.springwork.support.exception.InputNotFoundException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
