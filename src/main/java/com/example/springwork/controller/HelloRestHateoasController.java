@@ -17,10 +17,9 @@ public class HelloRestHateoasController {
 	private static final String TEMPLATE = "Hello, %s";
 
 	@RequestMapping("/hello-rest-hateoas")
-	public HttpEntity<HelloSub> hello(
-		@RequestParam(value = "name", defaultValue = "World") String name) {
+	public HttpEntity<HelloSub> hello(@RequestParam(value = "name", defaultValue = "World") String name) {
 
-		HelloSub greeting = new HelloSub(String.format(TEMPLATE, name +" - RestController Hateoas"));
+		HelloSub greeting = new HelloSub(String.format(TEMPLATE, name + " - RestController Hateoas"));
 		greeting.add(linkTo(methodOn(HelloRestHateoasController.class).hello(name)).withSelfRel());
 
 		return new ResponseEntity<>(greeting, HttpStatus.OK);

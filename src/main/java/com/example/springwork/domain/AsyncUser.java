@@ -1,7 +1,8 @@
 package com.example.springwork.domain;
+
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
-@JsonIgnoreProperties(ignoreUnknown=true)
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class AsyncUser {
 
   private String name;

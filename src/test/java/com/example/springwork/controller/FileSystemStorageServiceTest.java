@@ -23,8 +23,6 @@ import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.mock.web.MockMultipartFile;
 import org.springframework.test.web.servlet.MockMvc;
 
-
-
 @AutoConfigureMockMvc
 @SpringBootTest
 public class FileSystemStorageServiceTest {
@@ -35,26 +33,23 @@ public class FileSystemStorageServiceTest {
 	// @MockBean
 	// private StorageService storageService;
 
-   	@MockBean
-    FileSystemStorageService fileSystemStorageService;
+	@MockBean
+	FileSystemStorageService fileSystemStorageService;
 
 	@Test
 	public void shouldListAllFiles() throws Exception {
 		given(this.fileSystemStorageService.loadAll())
 				.willReturn(Stream.of(Paths.get("first.txt"), Paths.get("second.txt")));
 
-		this.mvc.perform(get("/")).andExpect(status().isOk())
-				.andExpect(model().attribute("files",
-						Matchers.contains("http://localhost/files/first.txt",
-								"http://localhost/files/second.txt")));
+		this.mvc.perform(get("/")).andExpect(status().isOk()).andExpect(model().attribute("files",
+				Matchers.contains("http://localhost/files/first.txt", "http://localhost/files/second.txt")));
 	}
 
 	@Test
 	public void shouldSaveUploadedFile() throws Exception {
-		MockMultipartFile multipartFile = new MockMultipartFile("file", "test.txt",
-				"text/plain", "Spring Framework".getBytes());
-		this.mvc.perform(multipart("/uploadForm").file(multipartFile))
-				.andExpect(status().isFound())
+		MockMultipartFile multipartFile = new MockMultipartFile("file", "test.txt", "text/plain",
+				"Spring Framework".getBytes());
+		this.mvc.perform(multipart("/uploadForm").file(multipartFile)).andExpect(status().isFound())
 				.andExpect(header().string("Location", "/uploadForm"));
 
 		then(this.fileSystemStorageService).should().store(multipartFile);
@@ -62,8 +57,7 @@ public class FileSystemStorageServiceTest {
 
 	@Test
 	public void should404WhenMissingFile() throws Exception {
-		given(this.fileSystemStorageService.loadAsResource("test.txt"))
-				.willThrow(StorageFileNotFoundException.class);
+		given(this.fileSystemStorageService.loadAsResource("test.txt")).willThrow(StorageFileNotFoundException.class);
 
 		this.mvc.perform(get("/files/test.txt")).andExpect(status().isNotFound());
 	}

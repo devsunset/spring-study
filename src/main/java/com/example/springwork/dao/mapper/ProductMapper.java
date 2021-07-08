@@ -10,6 +10,8 @@ import org.apache.ibatis.annotations.Mapper;
 public interface ProductMapper {
 
     Product selectProductById(Long id);
+
     List<Product> selectAllProducts();
+
     void insertProduct(Product product);
 }

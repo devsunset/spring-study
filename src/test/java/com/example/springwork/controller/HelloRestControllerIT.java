@@ -16,23 +16,22 @@ import org.springframework.http.ResponseEntity;
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 public class HelloRestControllerIT {
 
-	@LocalServerPort
-	private int port;
+    @LocalServerPort
+    private int port;
 
-	private URL base;
+    private URL base;
 
-	@Autowired
-	private TestRestTemplate template;
+    @Autowired
+    private TestRestTemplate template;
 
     @BeforeEach
     public void setUp() throws Exception {
-        this.base = new URL("http://localhost:" + port );
+        this.base = new URL("http://localhost:" + port);
     }
 
     @Test
     public void getHello() throws Exception {
-        ResponseEntity<String> response = template.getForEntity(base.toString()+ "/hello-rest",
-                String.class);
+        ResponseEntity<String> response = template.getForEntity(base.toString() + "/hello-rest", String.class);
         assertThat(response.getBody()).isEqualTo("Hello World - RestController");
     }
 }

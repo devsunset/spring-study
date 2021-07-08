@@ -1,5 +1,6 @@
 package com.example.springwork.support.assembler;
-import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.*; 
+
+import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.*;
 
 import com.example.springwork.controller.OrderController;
 import com.example.springwork.domain.Order;

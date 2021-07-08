@@ -37,6 +37,7 @@ public class Product {
 
     @Override
     public String toString() {
-      return "Product{" + "prodId=" + this.prodId + ", prodName='" + this.prodName + '\'' + ", prodPrice=" + this.prodPrice + '}';
+        return "Product{" + "prodId=" + this.prodId + ", prodName='" + this.prodName + '\'' + ", prodPrice="
+                + this.prodPrice + '}';
     }
 }

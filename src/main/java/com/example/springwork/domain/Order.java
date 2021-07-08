@@ -18,7 +18,8 @@ public class Order {
   private String description;
   private Status status;
 
-  Order() {}
+  Order() {
+  }
 
   public Order(String description, Status status) {
 

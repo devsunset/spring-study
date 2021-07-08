@@ -12,10 +12,10 @@ class SpringWorkApplicationTests {
 
 	@ClassRule
 	public static OutputCaptureRule out = new OutputCaptureRule();
-  
+
 	@Test
 	public void contextLoads() {
-	  out.expect(containsString("2,Korea,KO,KR"));
+		out.expect(containsString("2,Korea,KO,KR"));
 	}
 
 }

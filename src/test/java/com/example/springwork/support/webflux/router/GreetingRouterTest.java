@@ -9,7 +9,7 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.springframework.test.web.reactive.server.WebTestClient;
 
 @ExtendWith(SpringExtension.class)
-//  We create a `@SpringBootTest`, starting an actual server on a `RANDOM_PORT`
+// We create a `@SpringBootTest`, starting an actual server on a `RANDOM_PORT`
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 public class GreetingRouterTest {
 
@@ -21,12 +21,9 @@ public class GreetingRouterTest {
   @Test
   public void testHello() {
     webTestClient
-      // Create a GET request to test an endpoint
-      .get().uri("/webflux")
-      .accept(MediaType.TEXT_PLAIN)
-      .exchange()
-      // and use the dedicated DSL to test assertions against the response
-      .expectStatus().isOk()
-      .expectBody(String.class).isEqualTo("Hello, Spring!");
+        // Create a GET request to test an endpoint
+        .get().uri("/webflux").accept(MediaType.TEXT_PLAIN).exchange()
+        // and use the dedicated DSL to test assertions against the response
+        .expectStatus().isOk().expectBody(String.class).isEqualTo("Hello, Spring!");
   }
 }

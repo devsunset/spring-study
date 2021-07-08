@@ -1,4 +1,5 @@
 package com.example.springwork.controller;
+
 /*
  * Copyright 2012-2014 the original author or authors.
  *
@@ -35,7 +36,7 @@ import static org.assertj.core.api.BDDAssertions.then;
  * @author Dave Syer
  */
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-@TestPropertySource(properties = {"management.port=0"})
+@TestPropertySource(properties = { "management.port=0" })
 public class HelloWorldApplicationTests {
 
   @LocalServerPort
@@ -50,8 +51,8 @@ public class HelloWorldApplicationTests {
   @Test
   public void shouldReturn200WhenSendingRequestToController() throws Exception {
     @SuppressWarnings("rawtypes")
-    ResponseEntity<Map> entity = this.testRestTemplate.getForEntity(
-        "http://localhost:" + this.port + "/hello-rest", Map.class);
+    ResponseEntity<Map> entity = this.testRestTemplate.getForEntity("http://localhost:" + this.port + "/hello-rest",
+        Map.class);
 
     then(entity.getStatusCode()).isEqualTo(HttpStatus.OK);
   }
@@ -59,8 +60,8 @@ public class HelloWorldApplicationTests {
   @Test
   public void shouldReturn200WhenSendingRequestToManagementEndpoint() throws Exception {
     @SuppressWarnings("rawtypes")
-    ResponseEntity<Map> entity = this.testRestTemplate.getForEntity(
-        "http://localhost:" + this.mgt + "/actuator/info", Map.class);
+    ResponseEntity<Map> entity = this.testRestTemplate.getForEntity("http://localhost:" + this.mgt + "/actuator/info",
+        Map.class);
 
     then(entity.getStatusCode()).isEqualTo(HttpStatus.OK);
   }

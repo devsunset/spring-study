@@ -1,16 +1,15 @@
 package com.example.springwork.domain;
 
-
 public class Mail {
     private String address;
     private String title;
     private String message;
 
     public Mail(String address, String title, String message) {
-		this.address = address;
-		this.title = title;
+        this.address = address;
+        this.title = title;
         this.message = message;
-	}
+    }
 
     public String getAddress() {
         return this.address;

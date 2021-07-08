@@ -17,8 +17,7 @@ public class MailHandler {
     private MimeMessageHelper messageHelper;
 
     // 생성자
-    public MailHandler(JavaMailSender jSender) throws
-            MessagingException {
+    public MailHandler(JavaMailSender jSender) throws MessagingException {
         this.sender = jSender;
         message = jSender.createMimeMessage();
         messageHelper = new MimeMessageHelper(message, true, "UTF-8");
@@ -64,7 +63,7 @@ public class MailHandler {
     public void send() {
         try {
             sender.send(message);
-        }catch(Exception e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }

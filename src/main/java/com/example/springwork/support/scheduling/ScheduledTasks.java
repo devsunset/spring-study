@@ -15,10 +15,10 @@ public class ScheduledTasks {
 
 	private static final SimpleDateFormat dateFormat = new SimpleDateFormat("HH:mm:ss");
 
-    // https://docs.spring.io/spring-framework/docs/current/reference/html/integration.html#scheduling
-    // @Scheduled(cron="*/5 * * * * MON-FRI")
-    // @Scheduled(fixedRate = 5000)
-    // @Scheduled(initialDelay=1000, fixedRate=5000)
+	// https://docs.spring.io/spring-framework/docs/current/reference/html/integration.html#scheduling
+	// @Scheduled(cron="*/5 * * * * MON-FRI")
+	// @Scheduled(fixedRate = 5000)
+	// @Scheduled(initialDelay=1000, fixedRate=5000)
 	@Scheduled(fixedRate = 5000)
 	public void reportCurrentTime() {
 		log.info("The time is now {}", dateFormat.format(new Date()));

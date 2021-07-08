@@ -28,8 +28,7 @@ public class BookingService {
   }
 
   public List<String> findAllBookings() {
-    return jdbcTemplate.query("select FIRST_NAME from BOOKINGS",
-        (rs, rowNum) -> rs.getString("FIRST_NAME"));
+    return jdbcTemplate.query("select FIRST_NAME from BOOKINGS", (rs, rowNum) -> rs.getString("FIRST_NAME"));
   }
 
 }

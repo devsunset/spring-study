@@ -14,8 +14,8 @@ public class MailService {
     private static final String FROM_ADDRESS = "devsunset@gmail.com";
 
     @Autowired
-	public MailService() {
-	}
+    public MailService() {
+    }
 
     public void mailSend(Mail Mail) {
         try {
@@ -28,8 +28,7 @@ public class MailService {
             mailHandler.setAttach("newTest.txt", "static/mail_attach_text.txt");
             mailHandler.setInline("sample-img", "static/mail_attach_image.jpg");
             mailHandler.send();
-        }
-        catch(Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }

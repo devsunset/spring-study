@@ -18,20 +18,21 @@ public class HelloRestfulController {
 
 	@GetMapping("/hello-restful")
 	public Hello hello(@RequestParam(value = "name", defaultValue = "World") String name) {
-		return new Hello(counter.incrementAndGet(), String.format(template, name+" - RestController RESTful (use Jackson &  return json)"));
+		return new Hello(counter.incrementAndGet(),
+				String.format(template, name + " - RestController RESTful (use Jackson &  return json)"));
 	}
 
 	@GetMapping("/hello-restful-sub")
 	public Object hellosub(@RequestParam(value = "name", defaultValue = "World") String name) {
-		
-		ArrayList<HashMap<String,String>> dummyArrayList = new ArrayList<HashMap<String,String>>();
-		HashMap<String,String> dummyHashMap = new HashMap<String,String>();
+
+		ArrayList<HashMap<String, String>> dummyArrayList = new ArrayList<HashMap<String, String>>();
+		HashMap<String, String> dummyHashMap = new HashMap<String, String>();
 		dummyHashMap.put("1", "A");
 		dummyHashMap.put("2", "B");
 		dummyHashMap.put("3", "C");
 		dummyArrayList.add(dummyHashMap);
 
-		dummyHashMap = new HashMap<String,String>();
+		dummyHashMap = new HashMap<String, String>();
 		dummyHashMap.put("4", "a");
 		dummyHashMap.put("5", "b");
 		dummyHashMap.put("6", "c");
