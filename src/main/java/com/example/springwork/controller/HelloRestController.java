@@ -1,12 +1,12 @@
 package com.example.springwork.controller;
 
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.GetMapping;
 
 @RestController
 public class HelloRestController {
 
-	@RequestMapping("/hello-rest")
+	@GetMapping("/hello-rest")
 	public String hello() {
 		return "Hello World - RestController";
 	}

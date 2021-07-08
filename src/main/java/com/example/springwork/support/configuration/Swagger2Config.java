@@ -20,7 +20,7 @@ public class Swagger2Config {
                 .select()
                 .apis(RequestHandlerSelectors.basePackage("com.example.springwork.controller"))
                 // Api Annotation 으로 선언된 부분만 swagger 로 노출되도록 설정
-                //.apis(RequestHandlerSelectors.withMethodAnnotation(ApiOperation.class))
+                // .apis(RequestHandlerSelectors.withMethodAnnotation(ApiOperation.class))
                 .paths(PathSelectors.any())
                   //.paths(PathSelectors.ant("api/v1/**"))
                 .build()
