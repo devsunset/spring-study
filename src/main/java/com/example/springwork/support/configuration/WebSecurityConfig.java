@@ -23,14 +23,14 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 	protected void configure(HttpSecurity http) throws Exception {
 		http
 			.authorizeRequests()
-				.antMatchers(
-								"/h2-console/**" 
-						).permitAll()
-				.antMatchers("/**", "/**").permitAll()
+				.antMatchers("/h2-console/**" ).permitAll()
+				.antMatchers("/swagger-ui/**" ).permitAll()
+				// .antMatchers("/**", "/**").permitAll()
 				.anyRequest().authenticated()
 				.and()
 				.csrf()
 				.ignoringAntMatchers("/h2-console/**")
+				.ignoringAntMatchers("/swagger-ui/**")
 				.and()
 				.formLogin()
 					.loginPage("/login")
@@ -57,6 +57,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 	}
 	
 	/*
+	// --- LDAP ----
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
 	  http
