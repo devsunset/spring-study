@@ -288,8 +288,6 @@ Learn how to create metrics and tracing with Spring Boot
 * [Java Mail Sender](https://docs.spring.io/spring-boot/docs/2.5.2/reference/htmlsingle/#boot-features-email)
 * [Guide to Spring Email](https://www.baeldung.com/spring-email)
 
-
-
 ### Additional Links Guides - [Spring Guides GitHub](https://github.com/spring-guides)
 * [Okta-Hosted Login Page Example](https://github.com/okta/samples-java-spring/tree/master/okta-hosted-login)
 * [Custom Login Page Example](https://github.com/okta/samples-java-spring/tree/master/custom-login)
