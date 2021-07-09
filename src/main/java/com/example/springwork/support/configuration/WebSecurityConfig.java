@@ -32,6 +32,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 				.ignoringAntMatchers("/h2-console/**")
 				.ignoringAntMatchers("/swagger-ui/**")
 				.and()
+				// h2-console use
+				.headers().frameOptions().disable().and()
 				.formLogin()
 					.loginPage("/login")
 					.permitAll()
