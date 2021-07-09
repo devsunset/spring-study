@@ -1,21 +1,20 @@
-package com.example.springwork.dao.load;
+package com.example.springwork.support.configuration;
 
+import com.example.springwork.dao.repository.EmployeeRepository;
+import com.example.springwork.dao.repository.OrderRepository;
 import com.example.springwork.domain.Employee;
 import com.example.springwork.domain.Order;
 import com.example.springwork.support.enums.Status;
-import com.example.springwork.dao.repository.EmployeeRepository;
-import com.example.springwork.dao.repository.OrderRepository;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-@Configuration
-class LoadDatabase {
+import lombok.extern.slf4j.Slf4j;
 
-  private static final Logger log = LoggerFactory.getLogger(LoadDatabase.class);
+@Configuration
+@Slf4j
+class LoadDatabase {
 
   @Bean
   CommandLineRunner initDatabase(EmployeeRepository employeeRepository, OrderRepository orderRepository) {

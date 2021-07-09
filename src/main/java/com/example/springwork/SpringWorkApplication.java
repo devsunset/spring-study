@@ -24,8 +24,6 @@ import com.example.springwork.support.configuration.StorageProperties;
 import com.example.springwork.support.webflux.webclient.GreetingWebClient;
 
 import org.mybatis.spring.annotation.MapperScan;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -43,6 +41,7 @@ import org.springframework.web.client.RestTemplate;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
+import lombok.extern.slf4j.Slf4j;
 import springfox.documentation.oas.annotations.EnableOpenApi;
 
 @SpringBootApplication
@@ -52,10 +51,9 @@ import springfox.documentation.oas.annotations.EnableOpenApi;
 @EnableOpenApi
 @EnableConfigurationProperties(StorageProperties.class)
 @MapperScan(value = { "com.example.springwork.dao.*" })
+@Slf4j
 // @MapperScan(basePackageClasses = SpringWorkApplication.class)
 public class SpringWorkApplication {
-
-	private static final Logger log = LoggerFactory.getLogger(SpringWorkApplication.class);
 
 	@Autowired
 	DataSource dataSource;

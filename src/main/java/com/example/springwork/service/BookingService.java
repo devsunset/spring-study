@@ -2,16 +2,15 @@ package com.example.springwork.service;
 
 import java.util.List;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
-@Component
-public class BookingService {
+import lombok.extern.slf4j.Slf4j;
 
-  private final static Logger logger = LoggerFactory.getLogger(BookingService.class);
+@Component
+@Slf4j
+public class BookingService {
 
   private final JdbcTemplate jdbcTemplate;
 
@@ -22,7 +21,7 @@ public class BookingService {
   @Transactional
   public void book(String... persons) {
     for (String person : persons) {
-      logger.info("Booking " + person + " in a seat...");
+      log.info("Booking " + person + " in a seat...");
       jdbcTemplate.update("insert into BOOKINGS(FIRST_NAME) values (?)", person);
     }
   }
