@@ -12,15 +12,20 @@ import javax.sql.DataSource;
 
 import com.example.springwork.dao.mapper.CityMapper;
 import com.example.springwork.dao.repository.CustomerRepository;
+import com.example.springwork.dao.repository.EmployeeRepository;
+import com.example.springwork.dao.repository.OrderRepository;
 import com.example.springwork.domain.AsyncUser;
 import com.example.springwork.domain.City;
 import com.example.springwork.domain.Customer;
+import com.example.springwork.domain.Employee;
+import com.example.springwork.domain.Order;
 import com.example.springwork.domain.Quote;
 import com.example.springwork.service.BookingService;
 import com.example.springwork.service.FileSystemStorageService;
 import com.example.springwork.service.GitHubLookupService;
 import com.example.springwork.support.cache.BookRepository;
 import com.example.springwork.support.configuration.StorageProperties;
+import com.example.springwork.support.enums.Status;
 import com.example.springwork.support.webflux.webclient.GreetingWebClient;
 
 import org.mybatis.spring.annotation.MapperScan;
@@ -227,6 +232,25 @@ public class SpringWorkApplication {
 			// log.info(bauer.toString());
 			// }
 			log.info("");
+		};
+	}
+
+	@Bean
+	CommandLineRunner initDatabase(EmployeeRepository employeeRepository, OrderRepository orderRepository) {
+
+		return args -> {
+		employeeRepository.save(new Employee("Bilbo", "Baggins", "burglar"));
+		employeeRepository.save(new Employee("Frodo", "Baggins", "thief"));
+
+		employeeRepository.findAll().forEach(employee -> log.info("Preloaded " + employee));
+
+		orderRepository.save(new Order("MacBook Pro", Status.COMPLETED));
+		orderRepository.save(new Order("iPhone", Status.IN_PROGRESS));
+
+		orderRepository.findAll().forEach(order -> {
+			log.info("Preloaded " + order);
+		});
+
 		};
 	}
 
