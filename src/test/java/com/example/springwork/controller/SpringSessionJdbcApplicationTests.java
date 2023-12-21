@@ -58,7 +58,7 @@ public class SpringSessionJdbcApplicationTests {
 
   private ResultSet getResultSet(String sql) throws SQLException {
 
-    Connection conn = DriverManager.getConnection("jdbc:h2:~/temp/spring-work", "sa", "");
+    Connection conn = DriverManager.getConnection("jdbc:h2:~/temp/spring-study", "sa", "");
     Statement stat = conn.createStatement();
     return stat.executeQuery(sql);
   }

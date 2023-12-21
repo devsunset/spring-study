@@ -28,7 +28,7 @@ public class Swagger2Config {
         .paths(PathSelectors.any())
         // .paths(PathSelectors.ant("api/v1/**"))
         .build().useDefaultResponseMessages(false).enableUrlTemplating(false)
-        .apiInfo(new ApiInfoBuilder().title("spring-work").version("v1").description("spring-work swagger example")
+        .apiInfo(new ApiInfoBuilder().title("spring-study").version("v1").description("spring-study swagger example")
             .license("Apache License 2.0").licenseUrl("https://www.apache.org/licenses/LICENSE-2.0").build());
   }
 
